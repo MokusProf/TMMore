@@ -29,11 +29,6 @@ public class ModBlocks {
     public static final  Block KHAKI_RIVETED_HULL_SMALL_PANEL = registerBlock("khaki_riveted_hull_small_panel",
             new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
 
-//    public static final Block SNOW_SLAB = registerBlock("snow_slab",
-//            new SlabBlock(AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK)));
-
-//    public static final Block SNOW_STAIR = registerBlock("snow_stair",
-//            new StairsBlock(Blocks.SNOW_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(Blocks.SNOW_BLOCK)));
 
 
     private static Block registerBlock(String name, Block block){
