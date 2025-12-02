@@ -20,7 +20,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL);
         getOrCreateTagBuilder(BlockTags.SLABS)
-                .add(ModBlocks.KHAKI_RIVETED_HULL_SMAlL_SLAB);
+                .add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB);
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS);
 

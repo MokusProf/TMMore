@@ -22,7 +22,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL);
                         entries.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL);
                         entries.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS);
-                        entries.add(ModBlocks.KHAKI_RIVETED_HULL_SMAlL_SLAB);
+                        entries.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB);
                         entries.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL);
 
 
