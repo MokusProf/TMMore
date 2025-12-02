@@ -1,5 +1,6 @@
 package net.mokus.tmmore.datagen;
 
+import dev.doctor4t.trainmurdermystery.datagen.TMMModelGen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
@@ -14,6 +15,58 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
+        //Small Hulls
+        BlockStateModelGenerator.BlockTexturePool KHAKI_RIVETED_HULL_SMALL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.KHAKI_RIVETED_HULL_SMALL);
+        KHAKI_RIVETED_HULL_SMALL.stairs(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS);
+        KHAKI_RIVETED_HULL_SMALL.slab(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB);
+        KHAKI_RIVETED_HULL_SMALL.wall(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL);
+        generator.registerWallPlant(ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL);
+
+        BlockStateModelGenerator.BlockTexturePool ANTHRACITE_RIVETED_HULL_SMALL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL);
+        ANTHRACITE_RIVETED_HULL_SMALL.stairs(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_STAIRS);
+        ANTHRACITE_RIVETED_HULL_SMALL.slab(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB);
+        ANTHRACITE_RIVETED_HULL_SMALL.wall(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_WALL);
+        generator.registerWallPlant(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_PANEL);
+
+        BlockStateModelGenerator.BlockTexturePool BLACK_RIVETED_HULL_SMALL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.BLACK_RIVETED_HULL_SMALL);
+        BLACK_RIVETED_HULL_SMALL.stairs(ModBlocks.BLACK_RIVETED_HULL_SMALL_STAIRS);
+        BLACK_RIVETED_HULL_SMALL.slab(ModBlocks.BLACK_RIVETED_HULL_SMALL_SLAB);
+        BLACK_RIVETED_HULL_SMALL.wall(ModBlocks.BLACK_RIVETED_HULL_SMALL_WALL);
+        generator.registerWallPlant(ModBlocks.BLACK_RIVETED_HULL_SMALL_PANEL);
+
+        BlockStateModelGenerator.BlockTexturePool MAROON_RIVETED_HULL_SMALL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.MAROON_RIVETED_HULL_SMALL);
+        MAROON_RIVETED_HULL_SMALL.stairs(ModBlocks.MAROON_RIVETED_HULL_SMALL_STAIRS);
+        MAROON_RIVETED_HULL_SMALL.slab(ModBlocks.MAROON_RIVETED_HULL_SMALL_SLAB);
+        MAROON_RIVETED_HULL_SMALL.wall(ModBlocks.MAROON_RIVETED_HULL_SMALL_WALL);
+        generator.registerWallPlant(ModBlocks.MAROON_RIVETED_HULL_SMALL_PANEL);
+
+        BlockStateModelGenerator.BlockTexturePool MUNTZ_RIVETED_HULL_SMALL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.MUNTZ_RIVETED_HULL_SMALL);
+        MUNTZ_RIVETED_HULL_SMALL.stairs(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_STAIRS);
+        MUNTZ_RIVETED_HULL_SMALL.slab(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_SLAB);
+        MUNTZ_RIVETED_HULL_SMALL.wall(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_WALL);
+        generator.registerWallPlant(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_PANEL);
+
+        BlockStateModelGenerator.BlockTexturePool NAVY_RIVETED_HULL_SMALL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.NAVY_RIVETED_HULL_SMALL);
+        NAVY_RIVETED_HULL_SMALL.stairs(ModBlocks.NAVY_RIVETED_HULL_SMALL_STAIRS);
+        NAVY_RIVETED_HULL_SMALL.slab(ModBlocks.NAVY_RIVETED_HULL_SMALL_SLAB);
+        NAVY_RIVETED_HULL_SMALL.wall(ModBlocks.NAVY_RIVETED_HULL_SMALL_WALL);
+        generator.registerWallPlant(ModBlocks.NAVY_RIVETED_HULL_SMALL_PANEL);
+
+        BlockStateModelGenerator.BlockTexturePool WHITE_RIVETED_HULL_SMALL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.WHITE_RIVETED_HULL_SMALL);
+        WHITE_RIVETED_HULL_SMALL.stairs(ModBlocks.WHITE_RIVETED_HULL_SMALL_STAIRS);
+        WHITE_RIVETED_HULL_SMALL.slab(ModBlocks.WHITE_RIVETED_HULL_SMALL_SLAB);
+        WHITE_RIVETED_HULL_SMALL.wall(ModBlocks.WHITE_RIVETED_HULL_SMALL_WALL);
+        generator.registerWallPlant(ModBlocks.WHITE_RIVETED_HULL_SMALL_PANEL);
+
+
+
 
         // Moquettes
         generator.registerWoolAndCarpet(ModBlocks.BLACK_MOQUETTE,ModBlocks.BLACK_MOQUETTE_CARPET);

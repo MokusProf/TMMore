@@ -21,17 +21,73 @@ public class ModBlocks {
 
     public static final Block KHAKI_RIVETED_HULL_SMALL = registerBlock("khaki_riveted_hull_small",
             new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
-
     public static final Block KHAKI_RIVETED_HULL_SMALL_SLAB = registerBlock("khaki_riveted_hull_small_slab",
             new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
-
     public static final Block KHAKI_RIVETED_HULL_SMALL_STAIRS = registerBlock("khaki_riveted_hull_small_stairs",
             new StairsBlock(ModBlocks.KHAKI_RIVETED_HULL_SMALL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
-
     public static final  Block KHAKI_RIVETED_HULL_SMALL_WALL = registerBlock("khaki_riveted_hull_small_wall",
             new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
-
     public static final  Block KHAKI_RIVETED_HULL_SMALL_PANEL = registerBlock("khaki_riveted_hull_small_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block ANTHRACITE_RIVETED_HULL_SMALL = registerBlock("anthracite_riveted_hull_small",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block ANTHRACITE_RIVETED_HULL_SMALL_SLAB = registerBlock("anthracite_riveted_hull_small_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block ANTHRACITE_RIVETED_HULL_SMALL_STAIRS = registerBlock("anthracite_riveted_hull_small_stairs",
+            new StairsBlock(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block ANTHRACITE_RIVETED_HULL_SMALL_WALL = registerBlock("anthracite_riveted_hull_small_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block ANTHRACITE_RIVETED_HULL_SMALL_PANEL = registerBlock("anthracite_riveted_hull_small_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block BLACK_RIVETED_HULL_SMALL = registerBlock("black_riveted_hull_small",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block BLACK_RIVETED_HULL_SMALL_SLAB = registerBlock("black_riveted_hull_small_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block BLACK_RIVETED_HULL_SMALL_STAIRS = registerBlock("black_riveted_hull_small_stairs",
+            new StairsBlock(ModBlocks.BLACK_RIVETED_HULL_SMALL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block BLACK_RIVETED_HULL_SMALL_WALL = registerBlock("black_riveted_hull_small_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block BLACK_RIVETED_HULL_SMALL_PANEL = registerBlock("black_riveted_hull_small_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block MAROON_RIVETED_HULL_SMALL = registerBlock("maroon_riveted_hull_small",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block MAROON_RIVETED_HULL_SMALL_SLAB = registerBlock("maroon_riveted_hull_small_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block MAROON_RIVETED_HULL_SMALL_STAIRS = registerBlock("maroon_riveted_hull_small_stairs",
+            new StairsBlock(ModBlocks.MAROON_RIVETED_HULL_SMALL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block MAROON_RIVETED_HULL_SMALL_WALL = registerBlock("maroon_riveted_hull_small_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block MAROON_RIVETED_HULL_SMALL_PANEL = registerBlock("maroon_riveted_hull_small_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block MUNTZ_RIVETED_HULL_SMALL = registerBlock("muntz_riveted_hull_small",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block MUNTZ_RIVETED_HULL_SMALL_SLAB = registerBlock("muntz_riveted_hull_small_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block MUNTZ_RIVETED_HULL_SMALL_STAIRS = registerBlock("muntz_riveted_hull_small_stairs",
+            new StairsBlock(ModBlocks.MUNTZ_RIVETED_HULL_SMALL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block MUNTZ_RIVETED_HULL_SMALL_WALL = registerBlock("muntz_riveted_hull_small_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block MUNTZ_RIVETED_HULL_SMALL_PANEL = registerBlock("muntz_riveted_hull_small_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block NAVY_RIVETED_HULL_SMALL = registerBlock("navy_riveted_hull_small",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block NAVY_RIVETED_HULL_SMALL_SLAB = registerBlock("navy_riveted_hull_small_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block NAVY_RIVETED_HULL_SMALL_STAIRS = registerBlock("navy_riveted_hull_small_stairs",
+            new StairsBlock(ModBlocks.NAVY_RIVETED_HULL_SMALL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block NAVY_RIVETED_HULL_SMALL_WALL = registerBlock("navy_riveted_hull_small_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block NAVY_RIVETED_HULL_SMALL_PANEL = registerBlock("navy_riveted_hull_small_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block WHITE_RIVETED_HULL_SMALL = registerBlock("white_riveted_hull_small",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block WHITE_RIVETED_HULL_SMALL_SLAB = registerBlock("white_riveted_hull_small_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block WHITE_RIVETED_HULL_SMALL_STAIRS = registerBlock("white_riveted_hull_small_stairs",
+            new StairsBlock(ModBlocks.WHITE_RIVETED_HULL_SMALL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block WHITE_RIVETED_HULL_SMALL_WALL = registerBlock("white_riveted_hull_small_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block WHITE_RIVETED_HULL_SMALL_PANEL = registerBlock("white_riveted_hull_small_panel",
             new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
 
     // Normal Moquette Blocks
@@ -185,10 +241,55 @@ public class ModBlocks {
             .displayName(Text.translatable("buildGroup.Moquettes"))
             .build();
 
+    public static final RegistryKey<ItemGroup> TMMORE_BUILDING_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(TMMore.MOD_ID, "tmmore_building_group"));
+    public static final ItemGroup TMMORE_BUILDING = FabricItemGroup.builder()
+            .icon(() -> new ItemStack(ModBlocks.KHAKI_RIVETED_HULL_SMALL))
+            .displayName(Text.translatable("buildGroup.TMMore_Building"))
+            .build();
+
 
     public static void init(){
 
         TMMore.LOGGER.info("Weaving carpets and making blocks for " + TMMore.MOD_ID);
+
+        Registry.register(Registries.ITEM_GROUP, TMMORE_BUILDING_KEY, TMMORE_BUILDING);
+        ItemGroupEvents.modifyEntriesEvent(ModBlocks.TMMORE_BUILDING_KEY).register(TMMORE_BLOCKS -> {
+            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_PANEL);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_STAIRS);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_SLAB);
+            TMMORE_BLOCKS.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_WALL);
+                });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);
         ItemGroupEvents.modifyEntriesEvent(ModBlocks.MOQUETTES_KEY).register(BUILDING_BLOCKS -> {

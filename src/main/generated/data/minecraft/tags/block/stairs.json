@@ -1,5 +1,11 @@
 {
   "values": [
-    "tmmore:khaki_riveted_hull_small_stairs"
+    "tmmore:khaki_riveted_hull_small_stairs",
+    "tmmore:anthracite_riveted_hull_small_stairs",
+    "tmmore:black_riveted_hull_small_stairs",
+    "tmmore:maroon_riveted_hull_small_stairs",
+    "tmmore:muntz_riveted_hull_small_stairs",
+    "tmmore:navy_riveted_hull_small_stairs",
+    "tmmore:white_riveted_hull_small_stairs"
   ]
 }

@@ -1,5 +1,11 @@
 {
   "values": [
-    "tmmore:khaki_riveted_hull_small_wall"
+    "tmmore:khaki_riveted_hull_small_wall",
+    "tmmore:anthracite_riveted_hull_small_wall",
+    "tmmore:black_riveted_hull_small_wall",
+    "tmmore:maroon_riveted_hull_small_wall",
+    "tmmore:muntz_riveted_hull_small_wall",
+    "tmmore:navy_riveted_hull_small_wall",
+    "tmmore:white_riveted_hull_small_wall"
   ]
 }
