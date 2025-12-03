@@ -15,7 +15,9 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mokus.tmmore.TMMore;
+import net.mokus.tmmore.block.custom.CandelabreBlock;
 import net.mokus.tmmore.block.custom.PlushBlock;
+import net.mokus.tmmore.block.custom.WallCandelabreBlock;
 import net.mokus.tmmore.item.ModItems;
 
 public class ModBlocks {
@@ -40,6 +42,8 @@ public class ModBlocks {
             new WallBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block BLEACHED_PANEL = registerBlock("bleached_panel",
             new PanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block BLEACHED_FENCE = registerBlock("bleached_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
 
 
     public static final Block KHAKI_RIVETED_HULL_SMALL = registerBlock("khaki_riveted_hull_small",
@@ -247,6 +251,11 @@ public class ModBlocks {
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
     public static final Block WILLO_PLUSH = registerBlock("willo_plush",
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
+    public static final Block MOKUS_PLUSH = registerBlock("mokus_plush",
+            new PlushBlock(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).nonOpaque()));
+
+    public static final Block CANDY_CANE_BLOCK = registerBlock("candy_cane_block",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.BONE_BLOCK)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -323,15 +332,19 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.BLEACHED_FENCE);
+            TMMORE_BLOCKS.add(ModBlocks.CANDY_CANE_BLOCK);
+
+            //ETC NON BLOCK CONFORMING BLOCKS
+            TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);
+
+            //Plushies
             TMMORE_BLOCKS.add(ModBlocks.NORA_PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.DAVIDANDROCKET_PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.PICKLE_PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.DUCKAMOLY_PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.VERID__PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.WILLO_PLUSH);
-
-
-            TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);

@@ -42,6 +42,9 @@ public class ModItems {
     public static final Item YELLOW_LOLLIPOP = registerItem("yellow_lollipop",
             new Item(new Item.Settings().food(FoodComponents.APPLE)));
 
+    public static final Item CANDY_CANE = registerItem("candy_cane",
+            new Item(new Item.Settings().food(FoodComponents.APPLE)));
+
     public static final Item CANDELABRE_ITEM = registerItem("candelabre_item",
             new VerticallyAttachableBlockItem(ModBlocks.CANDELABRE, ModBlocks.WALL_CANDELABRE, new Item.Settings(), Direction.DOWN));
 
@@ -62,6 +65,7 @@ public class ModItems {
             TMMORE_ITEMS.add(ModItems.RED_LOLLIPOP);
             TMMORE_ITEMS.add(ModItems.YELLOW_LOLLIPOP);
             TMMORE_ITEMS.add(ModItems.BLUE_LOLLIPOP);
+            TMMORE_ITEMS.add(ModItems.CANDY_CANE);
         });
     }
 }

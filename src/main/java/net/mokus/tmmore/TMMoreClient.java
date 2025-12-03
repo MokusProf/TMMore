@@ -15,6 +15,10 @@ public class TMMoreClient implements ClientModInitializer {
                 ModBlocks.DUCKAMOLY_PLUSH,
                 ModBlocks.PICKLE_PLUSH,
                 ModBlocks.VERID__PLUSH,
-                ModBlocks.WILLO_PLUSH);
+                ModBlocks.WILLO_PLUSH,
+                ModBlocks.MOKUS_PLUSH,
+                ModBlocks.WALL_CANDELABRE);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
+                ModBlocks.MOKUS_PLUSH);
     }
 }

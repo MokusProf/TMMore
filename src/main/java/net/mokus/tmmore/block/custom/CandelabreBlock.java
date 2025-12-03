@@ -1,4 +1,4 @@
-package net.mokus.tmmore.block;
+package net.mokus.tmmore.block.custom;
 
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.MapCodec;

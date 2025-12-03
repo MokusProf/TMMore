@@ -1,4 +1,4 @@
-package net.mokus.tmmore.block;
+package net.mokus.tmmore.block.custom;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
@@ -8,6 +8,8 @@ import net.minecraft.block.*;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.particle.SimpleParticleType;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
@@ -117,15 +119,52 @@ public class WallCandelabreBlock extends CandelabreBlock{
         if (this.isLit(state)){
             Direction direction = state.get(FACING);
             double d = pos.getX() + 0.5;
-            double e = pos.getY() + 0.8;
+            double e = pos.getY() + 0.6;
             double f = pos.getZ() + 0.5;
             Direction direction2 = direction.getOpposite();
 
-            double x = d + 0.27 * direction2.getOffsetX();
+            double x = (d + 0.30 * direction2.getOffsetX());
             double y = e + 0.22;
-            double z = f + 0.27 * direction2.getOffsetZ();
-            world.addParticle(ParticleTypes.SMOKE, d + 0.27 * direction2.getOffsetX(), e + 0.22, f + 0.27 * direction2.getOffsetZ(), 0.0, 0.0, 0.0);
-            world.addParticle(this.particle, d + 0.27 * direction2.getOffsetX(), e + 0.22, f + 0.27 * direction2.getOffsetZ(), 0.0, 0.0, 0.0);
+            double z = (f + 0.30 * direction2.getOffsetZ());
+
+            double zl, zr, xl, xr;
+            double yB = y + 0.1;
+
+            if (direction == Direction.EAST || direction == Direction.WEST) {
+                zl = z + 0.12;
+                zr = z - 0.12;
+                xl = x + 0.10 * direction2.getOffsetX();
+                xr = x + 0.10 * direction2.getOffsetX();
+            } else {
+                zl = z + 0.10 * direction2.getOffsetZ();
+                zr = z + 0.10 * direction2.getOffsetZ();
+                xl = x + 0.12;
+                xr = x - 0.12;
+            }
+
+            //west and east needs dif calc AAAA
+
+            float ff = random.nextFloat();
+            if (ff < 0.3F) {
+                world.addParticle(ParticleTypes.SMOKE, x, y, z, 0.0, 0.0, 0.0);
+                world.addParticle(ParticleTypes.SMOKE, xl, yB, zr, 0.0, 0.0, 0.0);
+                world.addParticle(ParticleTypes.SMOKE, xr, yB, zr, 0.0, 0.0, 0.0);
+                if (f < 0.17F) {
+                    world.playSound(
+                            x,
+                            y,
+                            z,
+                            SoundEvents.BLOCK_CANDLE_AMBIENT,
+                            SoundCategory.BLOCKS,
+                            1.0F + random.nextFloat(),
+                            random.nextFloat() * 0.7F + 0.3F,
+                            false
+                    );
+                }
+            }
+            world.addParticle(this.particle, x, y, z, 0.0, 0.0, 0.0);
+            world.addParticle(this.particle, xl, yB, zl, 0.0, 0.0, 0.0);
+            world.addParticle(this.particle, xr, yB, zr, 0.0, 0.0, 0.0);
         }
     }
 

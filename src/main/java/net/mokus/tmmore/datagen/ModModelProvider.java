@@ -17,6 +17,10 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 import java.util.function.Function;
 
+import static net.minecraft.data.client.BlockStateModelGenerator.createBooleanModelMap;
+import static net.minecraft.data.client.BlockStateModelGenerator.createEastDefaultHorizontalRotationStates;
+
+
 public class ModModelProvider extends FabricModelProvider {
 
 
@@ -69,19 +73,32 @@ public class ModModelProvider extends FabricModelProvider {
     //Joinked code end
 
 
-    public final void registerCandelabra(BlockStateModelGenerator generator,Block candelabra){
-        Identifier unlitModel = Identifier.of(TMMore.MOD_ID,"block/candelabre");
-        Identifier litModel = Identifier.of(TMMore.MOD_ID,"block/candelabre_lit");
-        generator.blockStateCollector.accept(VariantsBlockStateSupplier.create(candelabra)
-                .coordinate(BlockStateVariantMap.create(Properties.LIT)
-                        .register(false,BlockStateVariant.create().put(VariantSettings.MODEL,unlitModel))
-                        .register(true,BlockStateVariant.create().put(VariantSettings.MODEL, litModel))));
+    public final void registerCandelabra(BlockStateModelGenerator generator,Block candelabre, Block wallCandelabre) {
+        Identifier unlitModel = Identifier.of(TMMore.MOD_ID, "block/candelabre");
+        Identifier litModel = Identifier.of(TMMore.MOD_ID, "block/candelabre_lit");
+
+        generator.blockStateCollector.accept(
+                VariantsBlockStateSupplier.create(candelabre)
+                        .coordinate(createBooleanModelMap(Properties.LIT, litModel, unlitModel))
+        );
+
+        Identifier wallUnlitModel = Identifier.of(TMMore.MOD_ID, "block/wall_candelabre");
+        Identifier wallLitModel = Identifier.of(TMMore.MOD_ID, "block/wall_candelabre_lit");
+
+        generator.blockStateCollector.accept(
+                VariantsBlockStateSupplier.create(wallCandelabre)
+                        .coordinate(createBooleanModelMap(Properties.LIT, wallLitModel, wallUnlitModel))
+                        .coordinate(createEastDefaultHorizontalRotationStates())
+        );
+
+        generator.excludeFromSimpleItemModelGeneration(candelabre);
+        generator.excludeFromSimpleItemModelGeneration(wallCandelabre);
     }
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
 
-        registerCandelabra(generator,ModBlocks.CANDELABRE);
+        registerCandelabra(generator,ModBlocks.CANDELABRE,ModBlocks.WALL_CANDELABRE);
 
         //Small Hulls
         BlockStateModelGenerator.BlockTexturePool KHAKI_RIVETED_HULL_SMALL =
@@ -138,6 +155,7 @@ public class ModModelProvider extends FabricModelProvider {
         BLEACHED.stairs(ModBlocks.BLEACHED_STAIRS);
         BLEACHED.slab(ModBlocks.BLEACHED_SLAB);
         BLEACHED.wall(ModBlocks.BLEACHED_WALL);
+        BLEACHED.fence(ModBlocks.BLEACHED_FENCE);
 
         //Panel registration
         this.registerPanel(generator,ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_PANEL,ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL);
@@ -193,6 +211,9 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.VERID__PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.DUCKAMOLY_PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.WILLO_PLUSH);
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.MOKUS_PLUSH);
+
+        generator.registerAxisRotated(ModBlocks.CANDY_CANE_BLOCK,TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
     }
 
     @Override
@@ -204,6 +225,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemGen.register(ModItems.RED_LOLLIPOP, Models.GENERATED);
         itemGen.register(ModItems.GREEN_LOLLIPOP, Models.GENERATED);
         itemGen.register(ModItems.YELLOW_LOLLIPOP, Models.GENERATED);
+        itemGen.register(ModItems.CANDY_CANE, Models.GENERATED);
     }
 
 
