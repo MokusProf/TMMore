@@ -87,5 +87,13 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         // Dark Marble
         translationBuilder.add(ModBlocks.DARK_MARBLE_TILE, "Dark Marble Tiles");
+
+        // Plushies
+        translationBuilder.add(ModBlocks.NORA_PLUSH,"Nora Plushie");
+        translationBuilder.add(ModBlocks.DUCKAMOLY_PLUSH,"Duckamoly Plushie");
+        translationBuilder.add(ModBlocks.DAVIDANDROCKET_PLUSH,"DavidandRocket Plushie");
+        translationBuilder.add(ModBlocks.PICKLE_PLUSH,"Pickle Plushie");
+        translationBuilder.add(ModBlocks.VERID__PLUSH,"Verid__ Plushie");
+        translationBuilder.add(ModBlocks.WILLO_PLUSH,"Willo Plushie");
     }
 }
