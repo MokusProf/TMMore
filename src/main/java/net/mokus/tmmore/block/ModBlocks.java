@@ -313,6 +313,13 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_STAIRS);
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_SLAB);
             TMMORE_BLOCKS.add(ModBlocks.BLEACHED_WALL);
+            TMMORE_BLOCKS.add(ModBlocks.NORA_PLUSH);
+            TMMORE_BLOCKS.add(ModBlocks.DAVIDANDROCKET_PLUSH);
+            TMMORE_BLOCKS.add(ModBlocks.PICKLE_PLUSH);
+            TMMORE_BLOCKS.add(ModBlocks.DUCKAMOLY_PLUSH);
+            TMMORE_BLOCKS.add(ModBlocks.VERID__PLUSH);
+            TMMORE_BLOCKS.add(ModBlocks.WILLO_PLUSH);
+
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);
