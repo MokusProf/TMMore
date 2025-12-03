@@ -141,7 +141,7 @@ public class CandelabreBlock extends Block {
 
 
     protected boolean isLit(BlockState state) {
-        return (Boolean)state.get(LIT);
+        return state.get(LIT);
     }
 
     public static void extinguish(@Nullable PlayerEntity player, BlockState state, WorldAccess world, BlockPos pos) {

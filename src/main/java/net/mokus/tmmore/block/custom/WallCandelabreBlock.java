@@ -72,7 +72,7 @@ public class WallCandelabreBlock extends CandelabreBlock{
     }
 
     public static VoxelShape getBoundingShape(BlockState state) {
-        return (VoxelShape)BOUNDING_SHAPES.get(state.get(FACING));
+        return BOUNDING_SHAPES.get(state.get(FACING));
     }
 
     @Override
