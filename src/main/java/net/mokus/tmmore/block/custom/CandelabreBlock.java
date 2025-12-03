@@ -38,7 +38,7 @@ public class CandelabreBlock extends Block {
     //BTW yes this is basically the torch code
     protected static final MapCodec<SimpleParticleType> PARTICLE_TYPE_CODEC = Registries.PARTICLE_TYPE
             .getCodec()
-            .<SimpleParticleType>comapFlatMap(
+            .comapFlatMap(
                     particleType -> particleType instanceof SimpleParticleType simpleParticleType
                             ? DataResult.success(simpleParticleType)
                             : DataResult.error(() -> "Not a SimpleParticleType: " + particleType),
