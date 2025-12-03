@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
 import net.mokus.tmmore.block.ModBlocks;
+import net.mokus.tmmore.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
 
@@ -103,7 +104,14 @@ public class ModModelProvider extends FabricModelProvider {
     }
 
     @Override
-    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+    public void generateItemModels(ItemModelGenerator itemGen) {
+        itemGen.register(ModItems.MILK_GLASS, Models.GENERATED);
+        itemGen.register(ModItems.CHOCCY_MILK_GLASS, Models.GENERATED);
+        itemGen.register(ModItems.STRAWBERRY_MILK_GLASS, Models.GENERATED);
+        itemGen.register(ModItems.BLUE_LOLLIPOP, Models.GENERATED);
+        itemGen.register(ModItems.RED_LOLLIPOP, Models.GENERATED);
+        itemGen.register(ModItems.GREEN_LOLLIPOP, Models.GENERATED);
+        itemGen.register(ModItems.YELLOW_LOLLIPOP, Models.GENERATED);
     }
 
 

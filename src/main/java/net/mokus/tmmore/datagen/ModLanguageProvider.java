@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.mokus.tmmore.block.ModBlocks;
+import net.mokus.tmmore.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,7 +18,8 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         // Menus Etc.
         translationBuilder.add(ModBlocks.MOQUETTES_KEY, "TMMore: Moquettes!");
         translationBuilder.add(ModBlocks.STRIPED_CARPET_KEY, "TMMore: Striped Carpets!");
-        translationBuilder.add(ModBlocks.TMMORE_BUILDING_KEY,"TMMore: Building Blocks");
+        translationBuilder.add(ModBlocks.TMMORE_BUILDING_KEY,"TMMore: Building Blocks!");
+        translationBuilder.add(ModItems.TMMORE_ITEM_KEY,"TMMore: Items!");
         // translationBuilder.add(ModBlocks.Dark_Marble_Key, "MM!: Dark Marble");
 
         // Full blocks
