@@ -1,10 +1,8 @@
 package net.mokus.tmmore.item;
 
 import dev.doctor4t.trainmurdermystery.item.CocktailItem;
-import dev.doctor4t.trainmurdermystery.item.LockpickItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Blocks;
 import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

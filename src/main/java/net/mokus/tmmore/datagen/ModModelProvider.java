@@ -1,13 +1,11 @@
 package net.mokus.tmmore.datagen;
 
-import com.google.gson.JsonElement;
 import com.mojang.datafixers.util.Pair;
 import dev.doctor4t.trainmurdermystery.TMM;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
-import net.minecraft.item.Item;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
@@ -17,12 +15,7 @@ import net.mokus.tmmore.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
 import java.util.function.Function;
-import java.util.function.Supplier;
-
-import static net.minecraft.data.client.BlockStateModelGenerator.createBooleanModelMap;
 
 public class ModModelProvider extends FabricModelProvider {
 
