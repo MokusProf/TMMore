@@ -95,5 +95,70 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.PICKLE_PLUSH,"Pickle Plushie");
         translationBuilder.add(ModBlocks.VERID__PLUSH,"Verid__ Plushie");
         translationBuilder.add(ModBlocks.WILLO_PLUSH,"Willo Plushie");
+
+        //Hull Blocks!
+        translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL, "Small Khaki Riveted Hull");
+        translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_PANEL, "Small Khaki Riveted Hull Panel");
+        translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS, "Small Khaki Riveted Hull Stair");
+        translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB, "Small Khaki Riveted Hull Slab");
+        translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_WALL, "Small Khaki Riveted Hull Wall");
+
+        translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL, "Small Anthracite Riveted Hull");
+        translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_PANEL, "Small Anthracite Riveted Hull Panel");
+        translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_STAIRS, "Small Anthracite Riveted Hull Stair");
+        translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB, "Small Anthracite Riveted Hull Slab");
+        translationBuilder.add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_WALL, "Small Anthracite Riveted Hull Wall");
+
+        translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL, "Small Black Riveted Hull");
+        translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_PANEL, "Small Black Riveted Hull Panel");
+        translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_STAIRS, "Small Black Riveted Hull Stair");
+        translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_SLAB, "Small Black Riveted Hull Slab");
+        translationBuilder.add(ModBlocks.BLACK_RIVETED_HULL_SMALL_WALL, "Small Black Riveted Hull Wall");
+
+        translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL, "Small Maroon Riveted Hull");
+        translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_PANEL, "Small Maroon Riveted Hull Panel");
+        translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_STAIRS, "Small Maroon Riveted Hull Stair");
+        translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_SLAB, "Small Maroon Riveted Hull Slab");
+        translationBuilder.add(ModBlocks.MAROON_RIVETED_HULL_SMALL_WALL, "Small Maroon Riveted Hull Wall");
+
+        translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL, "Small Muntz Riveted Hull");
+        translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_PANEL, "Small Muntz Riveted Hull Panel");
+        translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_STAIRS, "Small Muntz Riveted Hull Stair");
+        translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_SLAB, "Small Muntz Riveted Hull Slab");
+        translationBuilder.add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_WALL, "Small Muntz Riveted Hull Wall");
+
+        translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL, "Small Navy Riveted Hull");
+        translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_PANEL, "Small Navy Riveted Hull Panel");
+        translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_STAIRS, "Small Navy Riveted Hull Stair");
+        translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_SLAB, "Small Navy Riveted Hull Slab");
+        translationBuilder.add(ModBlocks.NAVY_RIVETED_HULL_SMALL_WALL, "Small Navy Riveted Hull Wall");
+
+        translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL, "Small White Riveted Hull");
+        translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_PANEL, "Small White Riveted Hull Panel");
+        translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_STAIRS, "Small White Riveted Hull Stair");
+        translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_SLAB, "Small White Riveted Hull Slab");
+        translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_WALL, "Small White Riveted Hull Wall");
+
+        // Planks
+        translationBuilder.add(ModBlocks.BLEACHED_PLANKS, "Bleached Planks");
+        translationBuilder.add(ModBlocks.BLEACHED_STAIRS, "Bleached Stairs");
+        translationBuilder.add(ModBlocks.BLEACHED_FENCE, "Bleached Fence");
+        translationBuilder.add(ModBlocks.BLEACHED_PANEL, "Bleached Panel");
+        translationBuilder.add(ModBlocks.BLEACHED_SLAB, "Bleached Slab");
+        translationBuilder.add(ModBlocks.BLEACHED_WALL, "Bleached Wall");
+
+        translationBuilder.add(ModBlocks.CANDY_CANE_BLOCK,"Candy Cane Block");
+
+        // Items
+        translationBuilder.add(ModItems.CANDELABRE_ITEM,"Candelbra");
+        translationBuilder.add(ModItems.MILK_GLASS,"Glass of Milk");
+        translationBuilder.add(ModItems.STRAWBERRY_MILK_GLASS,"Glass of Strawberry Milk");
+        translationBuilder.add(ModItems.CHOCCY_MILK_GLASS,"Glass of Choccy Milk");
+        translationBuilder.add(ModItems.CANDY_CANE,"Candy Cane");
+        translationBuilder.add(ModItems.BLUE_LOLLIPOP, "Blue Lollipop");
+        translationBuilder.add(ModItems.RED_LOLLIPOP, "Red Lollipop");
+        translationBuilder.add(ModItems.YELLOW_LOLLIPOP, "Yellow Lollipop");
+        translationBuilder.add(ModItems.GREEN_LOLLIPOP, "Green Lollipop");
+
     }
 }

@@ -213,6 +213,7 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.WILLO_PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.MOKUS_PLUSH);
 
+        // Candy Cane
         generator.registerAxisRotated(ModBlocks.CANDY_CANE_BLOCK,TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
     }
 
