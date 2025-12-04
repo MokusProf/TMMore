@@ -3,10 +3,17 @@
 	"id": "tmmore",
 	"version": "${version}",
 	"name": "TMMore",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
+	"description": "Adds more building blocks in the TMM style",
+	"contributors": [
 		"_Mokus",
-		"Miss_Nora"
+		"Miss_Nora",
+		"TheRealSquidMan",
+		"Phazicle",
+		"Indigoo",
+		"verid",
+		"pencilpal",
+		"DavidAndRocket",
+		"Duckamoly"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
