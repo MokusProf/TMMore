@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "tmmore:block/davidandrocket_plush",
-		"particle": "tmmore:block/davidandrocket_plush"
+		"particle": "minecraft:block/orange_wool"
 	},
 	"elements": [
 		{

@@ -4,7 +4,7 @@
 	"texture_size": [128, 128],
 	"textures": {
 		"0": "tmmore:block/noraplushie",
-		"particle": "tmmore:block/noraplushie"
+		"particle": "minecraft:block/red_wool"
 	},
 	"elements": [
 		{

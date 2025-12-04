@@ -4,7 +4,7 @@
 	"texture_size": [128, 128],
 	"textures": {
 		"1": "tmmore:block/willoplushie",
-		"particle": "tmmore:block/willoplushie"
+		"particle": "minecraft:block/gray_wool"
 	},
 	"elements": [
 		{
