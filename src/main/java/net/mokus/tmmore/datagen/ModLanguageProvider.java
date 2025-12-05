@@ -85,9 +85,6 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.RED_STRIPED_CARPET,"Red Striped Carpet");
         translationBuilder.add(ModBlocks.BROWN_STRIPED_CARPET,"Brown Striped Carpet");
 
-        // Dark Marble
-        translationBuilder.add(ModBlocks.DARK_MARBLE_TILE, "Dark Marble Tiles");
-
         // Plushies
         translationBuilder.add(ModBlocks.NORA_PLUSH,"Nora Plushie");
         translationBuilder.add(ModBlocks.DUCKAMOLY_PLUSH,"Duckamoly Plushie");
@@ -158,6 +155,7 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.BLEACHED_SLAB, "Bleached Slab");
         translationBuilder.add(ModBlocks.BLEACHED_WALL, "Bleached Wall");
 
+        // Candy Cane
         translationBuilder.add(ModBlocks.CANDY_CANE_BLOCK,"Candy Cane Block");
 
         // Benches
@@ -165,6 +163,12 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.QUEEN_BENCH, "Queen Bench");
         translationBuilder.add(ModBlocks.STEEL_BENCH, "Steel Bench");
         translationBuilder.add(ModBlocks.THORN_BENCH, "Thorn Bench");
+
+        // Marble
+        translationBuilder.add(ModBlocks.DARK_MARBLE_TILE, "Dark Marble Tiles");
+        translationBuilder.add(ModBlocks.CHECKERED_MARBLE_TILES, "Checkered Marble Tiles");
+        translationBuilder.add(ModBlocks.MIXED_MARBLE_TILES, "Mixed Marble Tiles");
+        translationBuilder.add(ModBlocks.DEEPWOKEN_TILE, "Deepwoken Tile");
 
         // Items
         translationBuilder.add(ModItems.CANDELABRE_ITEM,"Candelbra");
@@ -190,5 +194,9 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add("painting.tmmore.impression.author","duckamoly");
         translationBuilder.add("painting.tmmore.visitor.title","Visitor");
         translationBuilder.add("painting.tmmore.visitor.author","duckamoly");
+
+
+        translationBuilder.add("painting.tmmore.wall_banana.title","Wall Banana");
+        translationBuilder.add("painting.tmmore.wall_banana.author","DavidAndRocket");
     }
 }

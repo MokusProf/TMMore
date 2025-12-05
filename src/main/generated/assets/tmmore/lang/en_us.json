@@ -27,12 +27,14 @@
   "block.tmmore.brown_striped_carpet_block": "Brown Striped Carpet Block",
   "block.tmmore.candelabre": "Candelbra",
   "block.tmmore.candy_cane_block": "Candy Cane Block",
+  "block.tmmore.checkered_marble_tiles": "Checkered Marble Tiles",
   "block.tmmore.cyan_moquette": "Cyan Moquette",
   "block.tmmore.cyan_moquette_carpet": "Cyan Moquette Carpet",
   "block.tmmore.cyan_striped_carpet": "Cyan Striped Carpet",
   "block.tmmore.cyan_striped_carpet_block": "Cyan Striped Carpet Block",
   "block.tmmore.dark_marble_tile": "Dark Marble Tiles",
   "block.tmmore.davidandrocket_plush": "DavidandRocket Plushie",
+  "block.tmmore.deepwoken_tile": "Deepwoken Tile",
   "block.tmmore.doogey_plush": "Doogey Plush",
   "block.tmmore.duckamoly_plush": "Duckamoly Plushie",
   "block.tmmore.gray_moquette": "Gray Moquette",
@@ -67,6 +69,7 @@
   "block.tmmore.maroon_riveted_hull_small_slab": "Small Maroon Riveted Hull Slab",
   "block.tmmore.maroon_riveted_hull_small_stairs": "Small Maroon Riveted Hull Stair",
   "block.tmmore.maroon_riveted_hull_small_wall": "Small Maroon Riveted Hull Wall",
+  "block.tmmore.mixed_marble_tiles": "Mixed Marble Tiles",
   "block.tmmore.mokus_plush": "Mokus Plush",
   "block.tmmore.muntz_riveted_hull": "Muntz Riveted Hull",
   "block.tmmore.muntz_riveted_hull_small": "Small Muntz Riveted Hull",
@@ -136,5 +139,7 @@
   "painting.tmmore.veraportrait.author": "duckamoly",
   "painting.tmmore.veraportrait.title": "Vera",
   "painting.tmmore.visitor.author": "duckamoly",
-  "painting.tmmore.visitor.title": "Visitor"
+  "painting.tmmore.visitor.title": "Visitor",
+  "painting.tmmore.wall_banana.author": "DavidAndRocket",
+  "painting.tmmore.wall_banana.title": "Wall Banana"
 }

@@ -284,6 +284,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         // Dark Marble
         generator.registerSimpleCubeAll(ModBlocks.DARK_MARBLE_TILE);
+        generator.registerSimpleCubeAll(ModBlocks.CHECKERED_MARBLE_TILES);
+        generator.registerSimpleCubeAll(ModBlocks.MIXED_MARBLE_TILES);
+        generator.registerSimpleCubeAll(ModBlocks.DEEPWOKEN_TILE);
 
         // Plushies!
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.NORA_PLUSH);

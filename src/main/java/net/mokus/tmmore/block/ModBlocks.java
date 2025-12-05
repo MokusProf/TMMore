@@ -171,11 +171,6 @@ public class ModBlocks {
     public static final Block YELLOW_MOQUETTE_CARPET = registerBlock("yellow_moquette_carpet",
             new CarpetBlock(AbstractBlock.Settings.copy(Blocks.YELLOW_CARPET).strength(-1.0f,3600000.0f)));
 
-    // Dark marbles
-    public static final Block DARK_MARBLE_TILE = registerBlock("dark_marble_tile",
-            new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BRICKS).strength(-1.0f,3600000.0f)));
-
-
     // Striped Carpets
     public static final Block BLACK_STRIPED_CARPET_BLOCK = registerBlock("black_striped_carpet_block",
             new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
@@ -236,6 +231,15 @@ public class ModBlocks {
     public static final Block BROWN_STRIPED_CARPET = registerBlock("brown_striped_carpet",
             new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
 
+    // Dark marbles
+    public static final Block DARK_MARBLE_TILE = registerBlock("dark_marble_tile",
+            new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BRICKS).strength(-1.0f,3600000.0f)));
+    public static final Block CHECKERED_MARBLE_TILES = registerBlock("checkered_marble_tiles",
+            new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BRICKS).strength(-1.0f,3600000.0f)));
+    public static final Block MIXED_MARBLE_TILES = registerBlock("mixed_marble_tiles",
+            new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BRICKS).strength(-1.0f,3600000.0f)));
+    public static final Block DEEPWOKEN_TILE = registerBlock("deepwoken_tile",
+            new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BRICKS).strength(-1.0f,3600000.0f)));
 
     // Plushies
     public static final Block NORA_PLUSH = registerBlock("nora_plush",
@@ -257,6 +261,7 @@ public class ModBlocks {
     public static final Block SQUID_PLUSH = registerBlock("squid_plush",
             new PlushBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).nonOpaque()));
 
+    // Candy Cane
     public static final Block CANDY_CANE_BLOCK = registerBlock("candy_cane_block",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.BONE_BLOCK)));
 
@@ -395,6 +400,11 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ModBlocks.MOKUS_PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.DOOGEY_PLUSH);
             TMMORE_BLOCKS.add(ModBlocks.SQUID_PLUSH);
+
+            TMMORE_BLOCKS.add(DARK_MARBLE_TILE);
+            TMMORE_BLOCKS.add(CHECKERED_MARBLE_TILES);
+            TMMORE_BLOCKS.add(MIXED_MARBLE_TILES);
+            TMMORE_BLOCKS.add(DEEPWOKEN_TILE);
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);
