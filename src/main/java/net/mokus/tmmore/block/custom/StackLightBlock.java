@@ -21,8 +21,8 @@ import java.util.function.ToIntFunction;
 
 public class StackLightBlock extends Block {
     public static final BooleanProperty LIT = Properties.LIT;
-    public static final ToIntFunction<BlockState> STATE_TO_LUMINANCE = state -> state.get(LIT) ? 15 : 0;
     public static final BooleanProperty ACTIVE = TMMProperties.ACTIVE;
+    public static final ToIntFunction<BlockState> STATE_TO_LUMINANCE = state -> state.get(LIT) && state.get(ACTIVE) ? 15 : 0;
     protected static final VoxelShape SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 16.0, 14.0);
 
     public StackLightBlock(Settings settings) {
