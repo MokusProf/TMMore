@@ -19,6 +19,8 @@ public class TMMoreClient implements ClientModInitializer {
                 ModBlocks.MOKUS_PLUSH,
                 ModBlocks.DOOGEY_PLUSH,
                 ModBlocks.SQUID_PLUSH,
+                ModBlocks.PENCIL_PLUSH,
+                ModBlocks.INDIGO_PLUSH,
                 // Transparent texture blocks;
                 ModBlocks.WALL_CANDELABRE,
                 ModBlocks.PALE_BENCH,

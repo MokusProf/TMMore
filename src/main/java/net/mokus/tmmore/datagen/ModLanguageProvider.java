@@ -95,6 +95,8 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.DOOGEY_PLUSH,"Doogey Plush");
         translationBuilder.add(ModBlocks.MOKUS_PLUSH, "Mokus Plush");
         translationBuilder.add(ModBlocks.SQUID_PLUSH,"Squid Plush");
+        translationBuilder.add(ModBlocks.PENCIL_PLUSH,"Pencil Plush");
+        translationBuilder.add(ModBlocks.INDIGO_PLUSH,"Indigo Plush");
 
         //Hull Blocks!
         translationBuilder.add(ModBlocks.KHAKI_RIVETED_HULL, "Khaki Riveted Hull");
@@ -157,6 +159,7 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         // Candy Cane
         translationBuilder.add(ModBlocks.CANDY_CANE_BLOCK,"Candy Cane Block");
+        translationBuilder.add(ModBlocks.ZIGZAG_CANDY_BLOCK, "Zig Zag Candy Cane");
 
         // Benches
         translationBuilder.add(ModBlocks.PALE_BENCH, "Pale Bench");
@@ -169,6 +172,8 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHECKERED_MARBLE_TILES, "Checkered Marble Tiles");
         translationBuilder.add(ModBlocks.MIXED_MARBLE_TILES, "Mixed Marble Tiles");
         translationBuilder.add(ModBlocks.DEEPWOKEN_TILE, "Deepwoken Tile");
+
+        translationBuilder.add(ModBlocks.ARCADE_FLOOR,"Arcade Floor");
 
         // Items
         translationBuilder.add(ModItems.CANDELABRE_ITEM,"Candelbra");
