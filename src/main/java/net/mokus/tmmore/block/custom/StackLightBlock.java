@@ -1,6 +1,5 @@
 package net.mokus.tmmore.block.custom;
 
-import dev.doctor4t.trainmurdermystery.block.ToggleableFacingLightBlock;
 import dev.doctor4t.trainmurdermystery.index.TMMProperties;
 import dev.doctor4t.trainmurdermystery.index.TMMSounds;
 import net.minecraft.block.Block;
