@@ -5,6 +5,7 @@ import dev.doctor4t.trainmurdermystery.TMM;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
@@ -14,6 +15,7 @@ import net.mokus.tmmore.block.ModBlocks;
 import net.mokus.tmmore.block.custom.BenchBlock;
 import net.mokus.tmmore.block.custom.DoubleHullBlock;
 import net.mokus.tmmore.item.ModItems;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
@@ -310,6 +312,8 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerSimpleCubeAll(ModBlocks.ZIGZAG_CANDY_BLOCK);
 
         generator.registerSimpleCubeAll(ModBlocks.ARCADE_FLOOR);
+
+        generator.registerRotatable(ModBlocks.ASPHALT);
     }
 
     @Override

@@ -315,6 +315,9 @@ public class ModBlocks {
     public static final Block PINK_CITRINE_BRICKS = registerBlock("pink_citrine_bricks",
             new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK)));
 
+    public static final Block ASPHALT = registerBlock("asphalt",
+            new Block(AbstractBlock.Settings.copy(Blocks.GRAVEL)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, Identifier.of(TMMore.MOD_ID,name),block);
@@ -438,6 +441,7 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(PINK_CITRINE_BRICKS);
             TMMORE_BLOCKS.add(POLISHED_PINK_CITRINE);
             TMMORE_BLOCKS.add(SMOOTH_PINK_CITRINE);
+            TMMORE_BLOCKS.add(ASPHALT);
                 });
 
         Registry.register(Registries.ITEM_GROUP, MOQUETTES_KEY, MOQUETTES);

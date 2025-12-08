@@ -190,6 +190,8 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.POLISHED_PINK_CITRINE,"Polished Pink Citrine");
         translationBuilder.add(ModBlocks.SMOOTH_PINK_CITRINE,"Smooth Pink Citrine");
 
+        translationBuilder.add(ModBlocks.ASPHALT, "Asphalt");
+
         // Paintings
         translationBuilder.add("painting.tmmore.cold_whispings.title","Cold Whispings");
         translationBuilder.add("painting.tmmore.cold_whispings.author","PhantomPickle");
