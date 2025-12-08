@@ -42,6 +42,17 @@ public class ModItems {
     public static final Item YELLOW_LOLLIPOP = registerItem("yellow_lollipop",
             new Item(new Item.Settings().food(FoodComponents.APPLE)));
 
+    public static final Item GINGERBREAD = registerItem("gingerbread",
+            new Item(new Item.Settings().food(FoodComponents.BREAD)));
+    public static final Item GINGERBREAD_CHOCO = registerItem("gingerbread_choco",
+            new Item(new Item.Settings().food(FoodComponents.BREAD)));
+    public static final Item GINGERBREAD_DUCKAMOLY = registerItem("gingerbread_duckamoly",
+            new Item(new Item.Settings().food(FoodComponents.BREAD)));
+    public static final Item GINGERBREAD_RUDOLPH = registerItem("gingerbread_rudolph",
+            new Item(new Item.Settings().food(FoodComponents.BREAD)));
+    public static final Item GINGERBREAD_SCARF = registerItem("gingerbread_scarf",
+            new Item(new Item.Settings().food(FoodComponents.BREAD)));
+
     public static final Item CANDY_CANE = registerItem("candy_cane",
             new Item(new Item.Settings().food(FoodComponents.APPLE)));
 
@@ -58,14 +69,21 @@ public class ModItems {
     public static void init(){
         Registry.register(Registries.ITEM_GROUP, TMMORE_ITEM_KEY, TMMORE_ITEM);
         ItemGroupEvents.modifyEntriesEvent(ModItems.TMMORE_ITEM_KEY).register(TMMORE_ITEMS -> {
+            // Drink
             TMMORE_ITEMS.add(ModItems.MILK_GLASS);
             TMMORE_ITEMS.add(ModItems.STRAWBERRY_MILK_GLASS);
             TMMORE_ITEMS.add(ModItems.CHOCCY_MILK_GLASS);
+            // Food
             TMMORE_ITEMS.add(ModItems.GREEN_LOLLIPOP);
             TMMORE_ITEMS.add(ModItems.RED_LOLLIPOP);
             TMMORE_ITEMS.add(ModItems.YELLOW_LOLLIPOP);
             TMMORE_ITEMS.add(ModItems.BLUE_LOLLIPOP);
             TMMORE_ITEMS.add(ModItems.CANDY_CANE);
+            TMMORE_ITEMS.add(GINGERBREAD);
+            TMMORE_ITEMS.add(GINGERBREAD_CHOCO);
+            TMMORE_ITEMS.add(GINGERBREAD_DUCKAMOLY);
+            TMMORE_ITEMS.add(GINGERBREAD_RUDOLPH);
+            TMMORE_ITEMS.add(GINGERBREAD_SCARF);
         });
     }
 }

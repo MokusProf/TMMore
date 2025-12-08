@@ -326,6 +326,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemGen.register(ModItems.GREEN_LOLLIPOP, Models.GENERATED);
         itemGen.register(ModItems.YELLOW_LOLLIPOP, Models.GENERATED);
         itemGen.register(ModItems.CANDY_CANE, Models.GENERATED);
+        itemGen.register(ModItems.GINGERBREAD, Models.GENERATED);
+        itemGen.register(ModItems.GINGERBREAD_CHOCO, Models.GENERATED);
+        itemGen.register(ModItems.GINGERBREAD_DUCKAMOLY, Models.GENERATED);
+        itemGen.register(ModItems.GINGERBREAD_RUDOLPH, Models.GENERATED);
+        itemGen.register(ModItems.GINGERBREAD_SCARF, Models.GENERATED);
     }
 
 

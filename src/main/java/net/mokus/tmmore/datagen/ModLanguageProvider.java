@@ -192,6 +192,12 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.ASPHALT, "Asphalt");
 
+        translationBuilder.add(ModItems.GINGERBREAD,"Gingerbread");
+        translationBuilder.add(ModItems.GINGERBREAD_CHOCO,"Chocolate Gingerbread");
+        translationBuilder.add(ModItems.GINGERBREAD_DUCKAMOLY,"Duckamoly-bread");
+        translationBuilder.add(ModItems.GINGERBREAD_RUDOLPH,"Rudolph Gingerbread");
+        translationBuilder.add(ModItems.GINGERBREAD_SCARF,"Scarfed Gingerbread");
+
         // Paintings
         translationBuilder.add("painting.tmmore.cold_whispings.title","Cold Whispings");
         translationBuilder.add("painting.tmmore.cold_whispings.author","PhantomPickle");
