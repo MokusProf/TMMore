@@ -25,7 +25,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_WALL)
                 .add(ModBlocks.NAVY_RIVETED_HULL_SMALL_WALL)
                 .add(ModBlocks.WHITE_RIVETED_HULL_SMALL_WALL)
-                .add(ModBlocks.BLEACHED_WALL);
+                .add(ModBlocks.BLEACHED_WALL)
+                .add(ModBlocks.CORRUGATED_DARK_STEEL_WALL)
+                .add(ModBlocks.CORRUGATED_STAINLESS_STEEL_WALL)
+                .add(ModBlocks.PERFORATED_DARK_STEEL_WALL)
+                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_WALL);;
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_SLAB)
                 .add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_SLAB)
@@ -34,7 +38,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_SLAB)
                 .add(ModBlocks.NAVY_RIVETED_HULL_SMALL_SLAB)
                 .add(ModBlocks.WHITE_RIVETED_HULL_SMALL_SLAB)
-                .add(ModBlocks.BLEACHED_SLAB);
+                .add(ModBlocks.BLEACHED_SLAB)
+                .add(ModBlocks.CORRUGATED_DARK_STEEL_SLAB)
+                .add(ModBlocks.CORRUGATED_STAINLESS_STEEL_SLAB)
+                .add(ModBlocks.PERFORATED_DARK_STEEL_SLAB)
+                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_SLAB);
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.KHAKI_RIVETED_HULL_SMALL_STAIRS)
                 .add(ModBlocks.ANTHRACITE_RIVETED_HULL_SMALL_STAIRS)
@@ -43,7 +51,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MUNTZ_RIVETED_HULL_SMALL_STAIRS)
                 .add(ModBlocks.NAVY_RIVETED_HULL_SMALL_STAIRS)
                 .add(ModBlocks.WHITE_RIVETED_HULL_SMALL_STAIRS)
-                .add(ModBlocks.BLEACHED_STAIRS);
+                .add(ModBlocks.BLEACHED_STAIRS)
+                .add(ModBlocks.CORRUGATED_DARK_STEEL_STAIRS)
+                .add(ModBlocks.CORRUGATED_STAINLESS_STEEL_STAIRS)
+                .add(ModBlocks.PERFORATED_DARK_STEEL_STAIRS)
+                .add(ModBlocks.PERFORATED_STAINLESS_STEEL_STAIRS);
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.BLEACHED_FENCE);
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)

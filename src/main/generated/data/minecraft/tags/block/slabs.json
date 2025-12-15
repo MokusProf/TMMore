@@ -7,6 +7,10 @@
     "tmmore:muntz_riveted_hull_small_slab",
     "tmmore:navy_riveted_hull_small_slab",
     "tmmore:white_riveted_hull_small_slab",
-    "tmmore:bleached_slab"
+    "tmmore:bleached_slab",
+    "tmmore:corrugated_dark_steel_slab",
+    "tmmore:corrugated_stainless_steel_slab",
+    "tmmore:perforated_dark_steel_slab",
+    "tmmore:perforated_stainless_steel_slab"
   ]
 }

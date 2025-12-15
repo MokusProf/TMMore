@@ -369,6 +369,35 @@ public class ModModelProvider extends FabricModelProvider {
         registerConnectiveBlock(generator,ModBlocks.DARK_OAK_WALL_PANEL);
         registerConnectiveBlock(generator,ModBlocks.MAHOGANY_WALL_PANEL);
         registerConnectiveBlock(generator,ModBlocks.EBONY_WALL_PANEL);
+
+        BlockStateModelGenerator.BlockTexturePool PERFORATED_DARK_STEEL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.PERFORATED_DARK_STEEL);
+        PERFORATED_DARK_STEEL.stairs(ModBlocks.PERFORATED_DARK_STEEL_STAIRS);
+        PERFORATED_DARK_STEEL.slab(ModBlocks.PERFORATED_DARK_STEEL_SLAB);
+        PERFORATED_DARK_STEEL.wall(ModBlocks.PERFORATED_DARK_STEEL_WALL);
+        this.registerPanel(generator,ModBlocks.PERFORATED_DARK_STEEL_PANEL,ModBlocks.PERFORATED_DARK_STEEL);
+
+        BlockStateModelGenerator.BlockTexturePool PERFORATED_STAINLESS_STEEL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.PERFORATED_STAINLESS_STEEL);
+        PERFORATED_STAINLESS_STEEL.stairs(ModBlocks.PERFORATED_STAINLESS_STEEL_STAIRS);
+        PERFORATED_STAINLESS_STEEL.slab(ModBlocks.PERFORATED_STAINLESS_STEEL_SLAB);
+        PERFORATED_STAINLESS_STEEL.wall(ModBlocks.PERFORATED_STAINLESS_STEEL_WALL);
+        this.registerPanel(generator,ModBlocks.PERFORATED_STAINLESS_STEEL_PANEL,ModBlocks.PERFORATED_STAINLESS_STEEL);
+
+        BlockStateModelGenerator.BlockTexturePool CORRUGATED_STAINLESS_STEEL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.CORRUGATED_STAINLESS_STEEL);
+        CORRUGATED_STAINLESS_STEEL.stairs(ModBlocks.CORRUGATED_STAINLESS_STEEL_STAIRS);
+        CORRUGATED_STAINLESS_STEEL.slab(ModBlocks.CORRUGATED_STAINLESS_STEEL_SLAB);
+        CORRUGATED_STAINLESS_STEEL.wall(ModBlocks.CORRUGATED_STAINLESS_STEEL_WALL);
+        this.registerPanel(generator,ModBlocks.CORRUGATED_STAINLESS_STEEL_PANEL,ModBlocks.CORRUGATED_STAINLESS_STEEL);
+
+        BlockStateModelGenerator.BlockTexturePool CORRUGATED_DARK_STEEL =
+                generator.registerCubeAllModelTexturePool(ModBlocks.CORRUGATED_DARK_STEEL);
+        CORRUGATED_DARK_STEEL.stairs(ModBlocks.CORRUGATED_DARK_STEEL_STAIRS);
+        CORRUGATED_DARK_STEEL.slab(ModBlocks.CORRUGATED_DARK_STEEL_SLAB);
+        CORRUGATED_DARK_STEEL.wall(ModBlocks.CORRUGATED_DARK_STEEL_WALL);
+        this.registerPanel(generator,ModBlocks.CORRUGATED_DARK_STEEL_PANEL,ModBlocks.CORRUGATED_DARK_STEEL);
+
     }
 
     @Override
@@ -386,6 +415,22 @@ public class ModModelProvider extends FabricModelProvider {
         itemGen.register(ModItems.GINGERBREAD_DUCKAMOLY, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_RUDOLPH, Models.GENERATED);
         itemGen.register(ModItems.GINGERBREAD_SCARF, Models.GENERATED);
+        itemGen.register(ModItems.BLENDED_BERRY_BLAST, Models.GENERATED);
+        itemGen.register(ModItems.COTTON_SWIZZLE, Models.GENERATED);
+        itemGen.register(ModItems.NO_BERRY_LEMON_SOUR, Models.GENERATED);
+        itemGen.register(ModItems.SALTED_SEAFRUIT, Models.GENERATED);
+        itemGen.register(ModItems.SAPPHIC_SUNSET, Models.GENERATED);
+        itemGen.register(ModItems.THE_ALL_IN, Models.GENERATED);
+        itemGen.register(ModItems.THE_CHROMATIC, Models.GENERATED);
+        itemGen.register(ModItems.CAKESLICE, Models.GENERATED);
+        itemGen.register(ModItems.MIXED_MOCKTAIL, Models.GENERATED);
+        itemGen.register(ModItems.TEQUILA_SHOT, Models.GENERATED);
+        itemGen.register(ModItems.WHISKEY_SOUR, Models.GENERATED);
+        itemGen.register(ModItems.WATER_GLASS, Models.GENERATED);
+        itemGen.register(ModItems.MOONSHINE, Models.GENERATED);
+        itemGen.register(ModItems.BEER_PINT, Models.GENERATED);
+
+
     }
 
 

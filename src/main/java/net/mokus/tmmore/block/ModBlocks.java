@@ -327,6 +327,50 @@ public class ModBlocks {
     public static final Block MAHOGANY_WALL_PANEL = registerBlock("mahogany_wall_panel",
             new WallPanelBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
+    public static final Block CORRUGATED_DARK_STEEL = registerBlock("corrugated_dark_steel",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block CORRUGATED_DARK_STEEL_SLAB = registerBlock("corrugated_dark_steel_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block CORRUGATED_DARK_STEEL_STAIRS = registerBlock("corrugated_dark_steel_stairs",
+            new StairsBlock(ModBlocks.CORRUGATED_DARK_STEEL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block CORRUGATED_DARK_STEEL_WALL = registerBlock("corrugated_dark_steel_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block CORRUGATED_DARK_STEEL_PANEL = registerBlock("corrugated_dark_steel_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+
+    public static final Block CORRUGATED_STAINLESS_STEEL = registerBlock("corrugated_stainless_steel",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block CORRUGATED_STAINLESS_STEEL_SLAB = registerBlock("corrugated_stainless_steel_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block CORRUGATED_STAINLESS_STEEL_STAIRS = registerBlock("corrugated_stainless_steel_stairs",
+            new StairsBlock(ModBlocks.CORRUGATED_STAINLESS_STEEL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block CORRUGATED_STAINLESS_STEEL_WALL = registerBlock("corrugated_stainless_steel_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block CORRUGATED_STAINLESS_STEEL_PANEL = registerBlock("corrugated_stainless_steel_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+
+    public static final Block PERFORATED_STAINLESS_STEEL = registerBlock("perforated_stainless_steel",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block PERFORATED_STAINLESS_STEEL_SLAB = registerBlock("perforated_stainless_steel_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block PERFORATED_STAINLESS_STEEL_STAIRS = registerBlock("perforated_stainless_steel_stairs",
+            new StairsBlock(ModBlocks.PERFORATED_STAINLESS_STEEL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block PERFORATED_STAINLESS_STEEL_WALL = registerBlock("perforated_stainless_steel_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block PERFORATED_STAINLESS_STEEL_PANEL = registerBlock("perforated_stainless_steel_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+
+    public static final Block PERFORATED_DARK_STEEL = registerBlock("perforated_dark_steel",
+            new Block(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block PERFORATED_DARK_STEEL_SLAB = registerBlock("perforated_dark_steel_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final Block PERFORATED_DARK_STEEL_STAIRS = registerBlock("perforated_dark_steel_stairs",
+            new StairsBlock(ModBlocks.PERFORATED_DARK_STEEL.getDefaultState(),AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block PERFORATED_DARK_STEEL_WALL = registerBlock("perforated_dark_steel_wall",
+            new WallBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+    public static final  Block PERFORATED_DARK_STEEL_PANEL = registerBlock("perforated_dark_steel_panel",
+            new PanelBlock(AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, Identifier.of(TMMore.MOD_ID,name),block);
@@ -409,6 +453,27 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(WHITE_RIVETED_HULL_SMALL_STAIRS);
             TMMORE_BLOCKS.add(WHITE_RIVETED_HULL_SMALL_SLAB);
             TMMORE_BLOCKS.add(WHITE_RIVETED_HULL_SMALL_WALL);
+
+            TMMORE_BLOCKS.add(CORRUGATED_DARK_STEEL);
+            TMMORE_BLOCKS.add(CORRUGATED_DARK_STEEL_PANEL);
+            TMMORE_BLOCKS.add(CORRUGATED_DARK_STEEL_STAIRS);
+            TMMORE_BLOCKS.add(CORRUGATED_DARK_STEEL_SLAB);
+            TMMORE_BLOCKS.add(CORRUGATED_DARK_STEEL_WALL);
+            TMMORE_BLOCKS.add(CORRUGATED_STAINLESS_STEEL);
+            TMMORE_BLOCKS.add(CORRUGATED_STAINLESS_STEEL_PANEL);
+            TMMORE_BLOCKS.add(CORRUGATED_STAINLESS_STEEL_STAIRS);
+            TMMORE_BLOCKS.add(CORRUGATED_STAINLESS_STEEL_SLAB);
+            TMMORE_BLOCKS.add(CORRUGATED_STAINLESS_STEEL_WALL);
+            TMMORE_BLOCKS.add(PERFORATED_STAINLESS_STEEL);
+            TMMORE_BLOCKS.add(PERFORATED_STAINLESS_STEEL_PANEL);
+            TMMORE_BLOCKS.add(PERFORATED_STAINLESS_STEEL_STAIRS);
+            TMMORE_BLOCKS.add(PERFORATED_STAINLESS_STEEL_SLAB);
+            TMMORE_BLOCKS.add(PERFORATED_STAINLESS_STEEL_WALL);
+            TMMORE_BLOCKS.add(PERFORATED_DARK_STEEL);
+            TMMORE_BLOCKS.add(PERFORATED_DARK_STEEL_PANEL);
+            TMMORE_BLOCKS.add(PERFORATED_DARK_STEEL_STAIRS);
+            TMMORE_BLOCKS.add(PERFORATED_DARK_STEEL_SLAB);
+            TMMORE_BLOCKS.add(PERFORATED_DARK_STEEL_WALL);
 
             TMMORE_BLOCKS.add(BLEACHED_PLANKS);
             TMMORE_BLOCKS.add(BLEACHED_PANEL);

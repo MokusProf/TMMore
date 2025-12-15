@@ -7,6 +7,10 @@
     "tmmore:muntz_riveted_hull_small_wall",
     "tmmore:navy_riveted_hull_small_wall",
     "tmmore:white_riveted_hull_small_wall",
-    "tmmore:bleached_wall"
+    "tmmore:bleached_wall",
+    "tmmore:corrugated_dark_steel_wall",
+    "tmmore:corrugated_stainless_steel_wall",
+    "tmmore:perforated_dark_steel_wall",
+    "tmmore:perforated_stainless_steel_wall"
   ]
 }
