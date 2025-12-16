@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.mokus.tmmore.block.ModBlocks;
 import net.mokus.tmmore.item.ModItems;
-import net.mokus.tmmore.util.ModSounds;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -150,6 +149,30 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_SLAB, "Small White Riveted Hull Slab");
         translationBuilder.add(ModBlocks.WHITE_RIVETED_HULL_SMALL_WALL, "Small White Riveted Hull Wall");
 
+        translationBuilder.add(ModBlocks.CORRUGATED_DARK_STEEL,"Corrugated Dark Steel");
+        translationBuilder.add(ModBlocks.CORRUGATED_DARK_STEEL_STAIRS,"Corrugated Dark Steel Stairs");
+        translationBuilder.add(ModBlocks.CORRUGATED_DARK_STEEL_PANEL,"Corrugated Dark Steel Panel");
+        translationBuilder.add(ModBlocks.CORRUGATED_DARK_STEEL_SLAB,"Corrugated Dark Steel Slab");
+        translationBuilder.add(ModBlocks.CORRUGATED_DARK_STEEL_WALL,"Corrugated Dark Steel Wall");
+
+        translationBuilder.add(ModBlocks.CORRUGATED_STAINLESS_STEEL,"Corrugated Stainless Steel");
+        translationBuilder.add(ModBlocks.CORRUGATED_STAINLESS_STEEL_STAIRS,"Corrugated Stainless Steel Stairs");
+        translationBuilder.add(ModBlocks.CORRUGATED_STAINLESS_STEEL_PANEL,"Corrugated Stainless Steel Panel");
+        translationBuilder.add(ModBlocks.CORRUGATED_STAINLESS_STEEL_SLAB,"Corrugated Stainless Steel Slab");
+        translationBuilder.add(ModBlocks.CORRUGATED_STAINLESS_STEEL_WALL,"Corrugated Stainless Steel Wall");
+
+        translationBuilder.add(ModBlocks.PERFORATED_DARK_STEEL,"Perforated Dark Steel");
+        translationBuilder.add(ModBlocks.PERFORATED_DARK_STEEL_STAIRS,"Perforated Dark Steel Stairs");
+        translationBuilder.add(ModBlocks.PERFORATED_DARK_STEEL_PANEL,"Perforated Dark Steel Panel");
+        translationBuilder.add(ModBlocks.PERFORATED_DARK_STEEL_SLAB,"Perforated Dark Steel Slab");
+        translationBuilder.add(ModBlocks.PERFORATED_DARK_STEEL_WALL,"Perforated Dark Steel Wall");
+
+        translationBuilder.add(ModBlocks.PERFORATED_STAINLESS_STEEL,"Perforated Stainless Steel");
+        translationBuilder.add(ModBlocks.PERFORATED_STAINLESS_STEEL_STAIRS,"Perforated Stainless Steel Stairs");
+        translationBuilder.add(ModBlocks.PERFORATED_STAINLESS_STEEL_PANEL,"Perforated Stainless Steel Panel");
+        translationBuilder.add(ModBlocks.PERFORATED_STAINLESS_STEEL_SLAB,"Perforated Stainless Steel Slab");
+        translationBuilder.add(ModBlocks.PERFORATED_STAINLESS_STEEL_WALL,"Perforated Stainless Steel Wall");
+
         // Planks
         translationBuilder.add(ModBlocks.BLEACHED_PLANKS, "Bleached Planks");
         translationBuilder.add(ModBlocks.BLEACHED_STAIRS, "Bleached Stairs");
@@ -191,9 +214,19 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.POLISHED_PINK_CITRINE,"Polished Pink Citrine");
         translationBuilder.add(ModBlocks.SMOOTH_PINK_CITRINE,"Smooth Pink Citrine");
 
+        translationBuilder.add(ModBlocks.FORTERRA_BRICKS,"Forterra Bricks");
+        translationBuilder.add(ModBlocks.POLISHED_FORTERRA,"Polished Forterra");
+
         translationBuilder.add(ModBlocks.ASPHALT, "Asphalt");
 
         translationBuilder.add(ModBlocks.BUTTERFLY_DOOR_BLOCK, "Butterfly Stoker Door");
+        translationBuilder.add(ModBlocks.STACK_LIGHTS, "Modern Stack Lights");
+        translationBuilder.add(ModBlocks.ROOF_LAMP, "Roof Lamp");
+
+        translationBuilder.add(ModBlocks.EBONY_WALL_PANEL, "Ebony Panel Wall");
+        translationBuilder.add(ModBlocks.BLEACHED_WALL_PANEL, "Bleached Panel Wall");
+        translationBuilder.add(ModBlocks.MAHOGANY_WALL_PANEL, "Mahogany Panel Wall");
+        translationBuilder.add(ModBlocks.DARK_OAK_WALL_PANEL, "Dark Oak Panel Wall");
 
         translationBuilder.add(ModItems.GINGERBREAD,"Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_CHOCO,"Chocolate Gingerbread");

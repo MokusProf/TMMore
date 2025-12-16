@@ -315,6 +315,11 @@ public class ModBlocks {
     public static final Block PINK_CITRINE_BRICKS = registerBlock("pink_citrine_bricks",
             new Block(AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK)));
 
+    public static final Block POLISHED_FORTERRA = registerBlock("polished_forterra",
+            new Block(AbstractBlock.Settings.copy(Blocks.MUD_BRICK_WALL)));
+    public static final Block FORTERRA_BRICKS = registerBlock("forterra_bricks",
+            new Block(AbstractBlock.Settings.copy(Blocks.MUD_BRICKS)));
+
     public static final Block ASPHALT = registerBlock("asphalt",
             new Block(AbstractBlock.Settings.copy(Blocks.GRAVEL)));
 
@@ -502,6 +507,10 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(PINK_CITRINE_BRICKS);
             TMMORE_BLOCKS.add(POLISHED_PINK_CITRINE);
             TMMORE_BLOCKS.add(SMOOTH_PINK_CITRINE);
+
+            TMMORE_BLOCKS.add(FORTERRA_BRICKS);
+            TMMORE_BLOCKS.add(POLISHED_FORTERRA);
+
             TMMORE_BLOCKS.add(ASPHALT);
 
             TMMORE_BLOCKS.add(ARCADE_FLOOR);

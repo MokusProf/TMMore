@@ -357,6 +357,9 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerSimpleCubeAll(ModBlocks.POLISHED_PINK_CITRINE);
         generator.registerSimpleCubeAll(ModBlocks.SMOOTH_PINK_CITRINE);
 
+        generator.registerSimpleCubeAll(ModBlocks.FORTERRA_BRICKS);
+        generator.registerSimpleCubeAll(ModBlocks.POLISHED_FORTERRA);
+
         // Candy Cane
         generator.registerAxisRotated(ModBlocks.CANDY_CANE_BLOCK,TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
         generator.registerSimpleCubeAll(ModBlocks.ZIGZAG_CANDY_BLOCK);
