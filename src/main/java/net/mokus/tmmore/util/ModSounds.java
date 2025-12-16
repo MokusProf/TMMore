@@ -17,6 +17,7 @@ public class ModSounds {
     public static final SoundEvent DUCKAMOLY_PLUSH = registerSound("duckamoly_plush");
     public static final SoundEvent INDIGO_PLUSH = registerSound("indigo_plush");
     public static final SoundEvent SQUID_PLUSH = registerSound("squid_plush");
+    public static final SoundEvent NORA_PLUSH = registerSound("nora_plush");
 
     private static SoundEvent registerSound(String name){
         Identifier id = Identifier.of(TMMore.MOD_ID,name);

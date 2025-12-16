@@ -244,7 +244,7 @@ public class ModBlocks {
 
     // Plushies
     public static final Block NORA_PLUSH = registerBlock("nora_plush",
-            new PlushBlock(ModSounds.DOOGEY_PLUSH,AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque()));
+            new PlushBlock(ModSounds.NORA_PLUSH,AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque()));
     public static final Block DAVIDANDROCKET_PLUSH = registerBlock("davidandrocket_plush",
             new PlushBlock(ModSounds.DAVIDANDROCKET_PLUSH,AbstractBlock.Settings.copy(Blocks.ORANGE_WOOL).nonOpaque()));
     public static final Block DUCKAMOLY_PLUSH = registerBlock("duckamoly_plush",

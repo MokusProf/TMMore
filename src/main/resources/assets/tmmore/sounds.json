@@ -46,5 +46,11 @@
     "sounds": [
       "tmmore:indigo_plush"
     ]
+  },
+  "nora_plush": {
+    "subtitle": "sounds.tmmore.nora_plush",
+    "sounds": [
+      "tmmore:nora_plush"
+    ]
   }
 }
