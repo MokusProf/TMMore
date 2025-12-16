@@ -14,6 +14,7 @@ import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -38,11 +39,71 @@ public class ButterflyDoorBlock extends HorizontalFacingBlock {
     @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         Direction dir = state.get(FACING);
+
+        VoxelShape NORTH_SHAPE_CLOSED = VoxelShapes.combineAndSimplify(
+                VoxelShapes.cuboid(0.0, 0.0, 0.0, 1.0, 1.0, 0.2),
+                VoxelShapes.cuboid(0.25,0.9,0,0.75,1.15,0.25),
+                BooleanBiFunction.OR);
+        VoxelShape SOUTH_SHAPE_CLOSED = VoxelShapes.combineAndSimplify(
+                VoxelShapes.cuboid(0.0, 0.0, 0.8, 1.0, 1.0, 1.0),
+                VoxelShapes.cuboid(0.25,0.9,0.75,0.75,1.15,1),
+                BooleanBiFunction.OR);
+        VoxelShape WEST_SHAPE_CLOSED = VoxelShapes.combineAndSimplify(
+                VoxelShapes.cuboid(0.0, 0.0, 0.0, 0.2, 1.0, 1.0),
+                VoxelShapes.cuboid(0,0.9,0.25,0.25,1.15,0.75),
+                BooleanBiFunction.OR);
+        VoxelShape EAST_SHAPE_CLOSED = VoxelShapes.combineAndSimplify(
+                VoxelShapes.cuboid(0.8, 0.0, 0.0, 1.0, 1.0, 1.0),
+                VoxelShapes.cuboid(0.75,0.9,0.25,1,1.15,0.75),
+                BooleanBiFunction.OR);
+
+        VoxelShape NORTH_SHAPE_OPEN = VoxelShapes.combineAndSimplify(VoxelShapes.combineAndSimplify(
+                NORTH_SHAPE_CLOSED,
+                VoxelShapes.cuboid(0.1,0,0,0.9,0.9,1),
+                BooleanBiFunction.ONLY_FIRST
+        ),
+                VoxelShapes.cuboid(0,0.9,0,1,1,0.4),
+                BooleanBiFunction.OR
+        );
+        VoxelShape SOUTH_SHAPE_OPEN = VoxelShapes.combineAndSimplify(VoxelShapes.combineAndSimplify(
+                        SOUTH_SHAPE_CLOSED,
+                        VoxelShapes.cuboid(0.1,0,0,0.9,0.9,1),
+                        BooleanBiFunction.ONLY_FIRST
+                ),
+                VoxelShapes.cuboid(0,0.9,0.6,1,1,0.8),
+                BooleanBiFunction.OR
+        );
+        VoxelShape EAST_SHAPE_OPEN = VoxelShapes.combineAndSimplify(VoxelShapes.combineAndSimplify(
+                        EAST_SHAPE_CLOSED,
+                        VoxelShapes.cuboid(0,0,0.1,1,0.9,0.9),
+                        BooleanBiFunction.ONLY_FIRST
+                ),
+                VoxelShapes.cuboid(0.6,0.9,0,0.8,1,1),
+                BooleanBiFunction.OR
+        );
+        VoxelShape WEST_SHAPE_OPEN = VoxelShapes.combineAndSimplify(VoxelShapes.combineAndSimplify(
+                        WEST_SHAPE_CLOSED,
+                        VoxelShapes.cuboid(0,0,0.1,1,0.9,0.9),
+                        BooleanBiFunction.ONLY_FIRST
+                ),
+                VoxelShapes.cuboid(0.2,0.9,0,0.4,1,1),
+                BooleanBiFunction.OR
+        );
+
+        if (state.get(OPEN)){
+            return switch (dir){
+                case NORTH -> NORTH_SHAPE_OPEN;
+                case SOUTH -> SOUTH_SHAPE_OPEN;
+                case EAST -> EAST_SHAPE_OPEN;
+                case WEST -> WEST_SHAPE_OPEN;
+                default -> VoxelShapes.fullCube();
+            };
+        }
         return switch (dir){
-            case NORTH -> VoxelShapes.cuboid(0.0, 0.0, 0.0, 1.0, 1.0, 0.2);
-            case SOUTH -> VoxelShapes.cuboid(0.0, 0.0, 0.8, 1.0, 1.0, 1.0);
-            case EAST -> VoxelShapes.cuboid(0.8, 0.0, 0.0, 1.0, 1.0, 1.0);
-            case WEST -> VoxelShapes.cuboid(0.0, 0.0, 0.0, 0.2, 1.0, 1.0);
+            case NORTH -> NORTH_SHAPE_CLOSED;
+            case SOUTH -> SOUTH_SHAPE_CLOSED;
+            case EAST -> EAST_SHAPE_CLOSED;
+            case WEST -> WEST_SHAPE_CLOSED;
             default -> VoxelShapes.fullCube();
         };
     }
