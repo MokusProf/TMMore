@@ -27,9 +27,12 @@ public class TMMoreClient implements ClientModInitializer {
                 ModBlocks.QUEEN_BENCH,
                 ModBlocks.THORN_BENCH,
                 ModBlocks.STEEL_BENCH,
-                ModBlocks.SERVICE_BELL,
-                ModBlocks.BUTTERFLY_DOOR_BLOCK);
+                ModBlocks.BUTTERFLY_DOOR_BLOCK,
+                ModBlocks.KILL_BLOCK_PANEL,
+                ModBlocks.KILL_BLOCK,
+                ModBlocks.SERVICE_BELL);
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
                 ModBlocks.ROOF_LAMP);
+
     }
 }
