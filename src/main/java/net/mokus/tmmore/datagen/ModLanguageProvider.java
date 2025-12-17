@@ -220,6 +220,7 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ASPHALT, "Asphalt");
 
         translationBuilder.add(ModBlocks.BUTTERFLY_DOOR_BLOCK, "Butterfly Stoker Door");
+        translationBuilder.add(ModBlocks.SERVICE_BELL,"Service Bell");
         translationBuilder.add(ModBlocks.STACK_LIGHTS, "Modern Stack Lights");
         translationBuilder.add(ModBlocks.ROOF_LAMP, "Roof Lamp");
 

@@ -18,6 +18,10 @@ public class ModSounds {
     public static final SoundEvent INDIGO_PLUSH = registerSound("indigo_plush");
     public static final SoundEvent SQUID_PLUSH = registerSound("squid_plush");
     public static final SoundEvent NORA_PLUSH = registerSound("nora_plush");
+    public static final SoundEvent PENCIL_PLUSH = registerSound("pencil_plush");
+    public static final SoundEvent SERVICE_BELL = registerSound("service_bell");
+
+    public static final SoundEvent DEFAULT_PLUSH = registerSound("plush_squish");
 
     private static SoundEvent registerSound(String name){
         Identifier id = Identifier.of(TMMore.MOD_ID,name);

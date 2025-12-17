@@ -353,6 +353,8 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.PENCIL_PLUSH);
         generator.registerNorthDefaultHorizontalRotation(ModBlocks.INDIGO_PLUSH);
 
+        generator.registerNorthDefaultHorizontalRotation(ModBlocks.SERVICE_BELL);
+
         generator.registerSimpleCubeAll(ModBlocks.PINK_CITRINE_BRICKS);
         generator.registerSimpleCubeAll(ModBlocks.POLISHED_PINK_CITRINE);
         generator.registerSimpleCubeAll(ModBlocks.SMOOTH_PINK_CITRINE);

@@ -52,5 +52,23 @@
     "sounds": [
       "tmmore:nora_plush"
     ]
+  },
+  "pencil_plush":{
+    "subtitle": "sounds.tmmore.pencil_plush",
+    "sounds": [
+      "tmmore:pencil_plush"
+    ]
+  },
+  "plush_squish": {
+    "subtitle": "sounds.tmmore.default_plush",
+    "sounds": [
+      "tmmore:plush_squish"
+    ]
+  },
+  "service_bell": {
+    "subtitle": "sounds.tmmore.service_bell",
+    "sounds": [
+      "tmmore:service_bell"
+    ]
   }
 }
