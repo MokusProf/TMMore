@@ -1,5 +1,6 @@
 package net.mokus.tmmore.block;
 
+import dev.doctor4t.trainmurdermystery.block.OrnamentBlock;
 import dev.doctor4t.trainmurdermystery.block.PanelBlock;
 import dev.doctor4t.trainmurdermystery.index.TMMBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -405,6 +406,28 @@ public class ModBlocks {
     public static final Block SERVICE_BELL = registerBlock("service_bell",
             new SmallBellBlock(ModSounds.SERVICE_BELL,AbstractBlock.Settings.copy(TMMBlocks.DARK_STEEL).nonOpaque()));
 
+    public static final Block DARK_STEEL_ORNAMENT = registerBlock("dark_steel_ornament",
+            new OrnamentBlock(AbstractBlock.Settings.copy(TMMBlocks.GOLD_ORNAMENT)));
+    public static final Block STAINLESS_STEEL_ORNAMENT = registerBlock("stainless_steel_ornament",
+            new OrnamentBlock(AbstractBlock.Settings.copy(TMMBlocks.GOLD_ORNAMENT)));
+    public static final Block BRONZE_ORNAMENT = registerBlock("bronze_ornament",
+            new OrnamentBlock(AbstractBlock.Settings.copy(TMMBlocks.GOLD_ORNAMENT)));
+    public static final Block PLATINUM_ORNAMENT = registerBlock("platinum_ornament",
+            new OrnamentBlock(AbstractBlock.Settings.copy(TMMBlocks.GOLD_ORNAMENT)));
+
+    public static final Block COPPER_ORNAMENT = registerBlock("copper_ornament",
+            new OrnamentBlock(AbstractBlock.Settings.copy(TMMBlocks.GOLD_ORNAMENT)));
+    public static final Block EXPOSED_COPPER_ORNAMENT = registerBlock("exposed_copper_ornament",
+            new OrnamentBlock(AbstractBlock.Settings.copy(TMMBlocks.GOLD_ORNAMENT)));
+    public static final Block OXIDIZED_COPPER_ORNAMENT = registerBlock("oxidized_copper_ornament",
+            new OrnamentBlock(AbstractBlock.Settings.copy(TMMBlocks.GOLD_ORNAMENT)));
+    public static final Block WEATHERED_COPPER_ORNAMENT = registerBlock("weathered_copper_ornament",
+            new OrnamentBlock(AbstractBlock.Settings.copy(TMMBlocks.GOLD_ORNAMENT)));
+
+    public static final Block CHRISTMAS_LIGHTS = registerBlock("christmas_lights",
+            new ChristmasLights(AbstractBlock.Settings.copy(Blocks.VINE).sounds(BlockSoundGroup.COPPER_BULB).nonOpaque()));
+
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
@@ -507,14 +530,21 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(PERFORATED_DARK_STEEL_SLAB);
             TMMORE_BLOCKS.add(PERFORATED_DARK_STEEL_WALL);
 
+            TMMORE_BLOCKS.add(DARK_STEEL_ORNAMENT);
+            TMMORE_BLOCKS.add(STAINLESS_STEEL_ORNAMENT);
+            TMMORE_BLOCKS.add(PLATINUM_ORNAMENT);
+            TMMORE_BLOCKS.add(BRONZE_ORNAMENT);
+            TMMORE_BLOCKS.add(COPPER_ORNAMENT);
+            TMMORE_BLOCKS.add(EXPOSED_COPPER_ORNAMENT);
+            TMMORE_BLOCKS.add(WEATHERED_COPPER_ORNAMENT);
+            TMMORE_BLOCKS.add(OXIDIZED_COPPER_ORNAMENT);
+
             TMMORE_BLOCKS.add(BLEACHED_PLANKS);
             TMMORE_BLOCKS.add(BLEACHED_PANEL);
             TMMORE_BLOCKS.add(BLEACHED_STAIRS);
             TMMORE_BLOCKS.add(BLEACHED_SLAB);
             TMMORE_BLOCKS.add(BLEACHED_WALL);
             TMMORE_BLOCKS.add(BLEACHED_FENCE);
-
-            //Wall panels
             TMMORE_BLOCKS.add(BLEACHED_WALL_PANEL);
             TMMORE_BLOCKS.add(VERAWOOD_PLANKS);
             TMMORE_BLOCKS.add(VERAWOOD_PANEL);
@@ -522,9 +552,10 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(VERAWOOD_SLAB);
             TMMORE_BLOCKS.add(VERAWOOD_WALL);
             TMMORE_BLOCKS.add(VERAWOOD_FENCE);
-            TMMORE_BLOCKS.add(VERAWOOD_WALL_PANEL);
+
 
             //Wall panels
+            TMMORE_BLOCKS.add(VERAWOOD_WALL_PANEL);
             TMMORE_BLOCKS.add(BUBINGA_WALL_PANEL);
             TMMORE_BLOCKS.add(EBONY_WALL_PANEL);
             TMMORE_BLOCKS.add(DARK_OAK_WALL_PANEL);
@@ -549,6 +580,7 @@ public class ModBlocks {
             TMMORE_BLOCKS.add(ARCADE_FLOOR);
 
             //ETC NON BLOCK CONFORMING BLOCKS
+            TMMORE_BLOCKS.add(CHRISTMAS_LIGHTS);
             TMMORE_BLOCKS.add(KILL_BLOCK);
             TMMORE_BLOCKS.add(KILL_BLOCK_PANEL);
             TMMORE_BLOCKS.add(ModItems.CANDELABRE_ITEM);

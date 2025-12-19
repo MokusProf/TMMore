@@ -1,0 +1,6 @@
+{
+  "parent": "trainmurdermystery:block/template_ornament_r270",
+  "textures": {
+    "texture": "tmmore:block/dark_steel_ornament_side"
+  }
+}

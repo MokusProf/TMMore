@@ -2,6 +2,8 @@ package net.mokus.tmmore.datagen;
 
 import com.mojang.datafixers.util.Pair;
 import dev.doctor4t.trainmurdermystery.TMM;
+import dev.doctor4t.trainmurdermystery.block.OrnamentBlock;
+import dev.doctor4t.trainmurdermystery.datagen.TMMModelGen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
@@ -9,6 +11,8 @@ import net.minecraft.data.client.*;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Util;
+import net.minecraft.util.math.Direction;
 import net.mokus.tmmore.TMMore;
 import net.mokus.tmmore.block.ModBlocks;
 import net.mokus.tmmore.block.custom.BenchBlock;
@@ -47,6 +51,44 @@ public class ModModelProvider extends FabricModelProvider {
         return template(TMM.id(parentName), requiredTextureKeys);
     }
 
+    private BlockStateVariant rotateForFace(BlockStateVariant variant, Direction direction, boolean uvlock) {
+        if (uvlock) {
+            variant.put(VariantSettings.UVLOCK, true);
+        }
+        switch (direction) {
+            case EAST -> variant.put(VariantSettings.Y, VariantSettings.Rotation.R90);
+            case SOUTH -> variant.put(VariantSettings.Y, VariantSettings.Rotation.R180);
+            case WEST -> variant.put(VariantSettings.Y, VariantSettings.Rotation.R270);
+            case UP -> variant.put(VariantSettings.X, VariantSettings.Rotation.R270);
+            case DOWN -> variant.put(VariantSettings.X, VariantSettings.Rotation.R90);
+        }
+        return variant;
+    }
+    private BlockStateVariant variant() {
+        return BlockStateVariant.create();
+    }
+
+    private <T> BlockStateVariant variant(VariantSetting<T> variantSetting, T value) {
+        return this.variant().put(variantSetting, value);
+    }
+
+    private BlockStateVariant model(Identifier model) {
+        return this.variant(VariantSettings.MODEL, model);
+    }
+
+    private static final Model ORNAMENT_R0 = template(
+            "block/template_ornament_r0", TextureKey.TEXTURE
+    );
+    private static final Model ORNAMENT_R90 = template(
+            "block/template_ornament_r90", TextureKey.TEXTURE
+    );
+    private static final Model ORNAMENT_R180 = template(
+            "block/template_ornament_r180", TextureKey.TEXTURE
+    );
+    private static final Model ORNAMENT_R270 = template(
+            "block/template_ornament_r270", TextureKey.TEXTURE
+    );
+
     private static final Model PANEL = template(
             "block/template_panel", TextureKey.ALL
     );
@@ -73,6 +115,38 @@ public class ModModelProvider extends FabricModelProvider {
         }
 
         generator.blockStateCollector.accept(blockStateSupplier);
+    }
+
+    private void registerOrnament(BlockStateModelGenerator generator, Block block) {
+        TextureMap allTexture = TextureMap.texture(TextureMap.getSubId(block, "_all"));
+        TextureMap endTexture = TextureMap.texture(TextureMap.getSubId(block, "_end"));
+        TextureMap sideTexture = TextureMap.texture(TextureMap.getSubId(block, "_side"));
+        TextureMap cornerTexture = TextureMap.texture(TextureMap.getSubId(block, "_corner"));
+        TextureMap sidesTexture = TextureMap.texture(TextureMap.getSubId(block, "_sides"));
+        TextureMap centerTexture = TextureMap.texture(TextureMap.getSubId(block, "_center"));
+        TextureMap sidesCenterTexture = TextureMap.texture(TextureMap.getSubId(block, "_sides_center"));
+        ORNAMENT_R0.upload(block, "_all", allTexture, generator.modelCollector);
+        ORNAMENT_R0.upload(block, "_center", centerTexture, generator.modelCollector);
+        ORNAMENT_R0.upload(block, "_left_right_center", sidesCenterTexture, generator.modelCollector);
+        ORNAMENT_R0.upload(block, "_left", sideTexture, generator.modelCollector);
+        ORNAMENT_R90.upload(block, "_top", sideTexture, generator.modelCollector);
+        ORNAMENT_R180.upload(block, "_right", sideTexture, generator.modelCollector);
+        ORNAMENT_R270.upload(block, "_bottom", sideTexture, generator.modelCollector);
+        ORNAMENT_R0.upload(block, "_left_bottom", cornerTexture, generator.modelCollector);
+        ORNAMENT_R90.upload(block, "_left_top", cornerTexture, generator.modelCollector);
+        ORNAMENT_R180.upload(block, "_right_top", cornerTexture, generator.modelCollector);
+        ORNAMENT_R270.upload(block, "_right_bottom", cornerTexture, generator.modelCollector);
+        ORNAMENT_R0.upload(block, "_left_right", sidesTexture, generator.modelCollector);
+        ORNAMENT_R90.upload(block, "_top_bottom", sidesTexture, generator.modelCollector);
+        ORNAMENT_R0.upload(block, "_left_right_top", endTexture, generator.modelCollector);
+        ORNAMENT_R90.upload(block, "_right_top_bottom", endTexture, generator.modelCollector);
+        ORNAMENT_R180.upload(block, "_left_right_bottom", endTexture, generator.modelCollector);
+        ORNAMENT_R270.upload(block, "_left_top_bottom", endTexture, generator.modelCollector);
+        generator.registerItemModel(block, "_all");
+        BlockStateVariantMap map = BlockStateVariantMap.create(OrnamentBlock.FACING, OrnamentBlock.SHAPE).register((facing, shape) ->
+                this.rotateForFace(this.model(ModelIds.getBlockSubModelId(block, "_" + shape.asString())), facing, false)
+        );
+        generator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(map));
     }
 
     //Joinked code end
@@ -214,6 +288,30 @@ public class ModModelProvider extends FabricModelProvider {
                                         BlockStateVariant.create().put(VariantSettings.MODEL, boxModel))
                         )
         );
+    }
+
+    public final void registerChristmasLights(BlockStateModelGenerator generator, Block block) {
+        generator.registerItemModel(block);
+        Identifier identifier = ModelIds.getBlockModelId(block);
+        MultipartBlockStateSupplier multipartBlockStateSupplier = MultipartBlockStateSupplier.create(block);
+        When.PropertyCondition propertyCondition = Util.make(
+                When.create(), propertyConditionx -> BlockStateModelGenerator.CONNECTION_VARIANT_FUNCTIONS.stream().map(Pair::getFirst).forEach(property -> {
+                    if (block.getDefaultState().contains(property)) {
+                        propertyConditionx.set(property, false);
+                    }
+                })
+        );
+
+        for (Pair<BooleanProperty, Function<Identifier, BlockStateVariant>> pair : BlockStateModelGenerator.CONNECTION_VARIANT_FUNCTIONS) {
+            BooleanProperty booleanProperty = pair.getFirst();
+            Function<Identifier, BlockStateVariant> function = pair.getSecond();
+            if (block.getDefaultState().contains(booleanProperty)) {
+                multipartBlockStateSupplier.with(When.create().set(booleanProperty, true), function.apply(identifier));
+                multipartBlockStateSupplier.with(propertyCondition, function.apply(identifier));
+            }
+        }
+
+        generator.blockStateCollector.accept(multipartBlockStateSupplier);
     }
 
     @Override
@@ -416,6 +514,18 @@ public class ModModelProvider extends FabricModelProvider {
         generator.registerBuiltinWithParticle(ModBlocks.KILL_BLOCK, ModBlocks.KILL_BLOCK.asItem());
         generator.registerItemModel(ModBlocks.KILL_BLOCK.asItem());
         this.registerPanel(generator,ModBlocks.KILL_BLOCK_PANEL,ModBlocks.KILL_BLOCK_PANEL);
+
+        this.registerOrnament(generator,ModBlocks.DARK_STEEL_ORNAMENT);
+        this.registerOrnament(generator,ModBlocks.STAINLESS_STEEL_ORNAMENT);
+        this.registerOrnament(generator,ModBlocks.BRONZE_ORNAMENT);
+        this.registerOrnament(generator,ModBlocks.PLATINUM_ORNAMENT);
+
+        this.registerOrnament(generator,ModBlocks.COPPER_ORNAMENT);
+        this.registerOrnament(generator,ModBlocks.EXPOSED_COPPER_ORNAMENT);
+        this.registerOrnament(generator,ModBlocks.OXIDIZED_COPPER_ORNAMENT);
+        this.registerOrnament(generator,ModBlocks.WEATHERED_COPPER_ORNAMENT);
+
+        this.registerChristmasLights(generator,ModBlocks.CHRISTMAS_LIGHTS);
 
 
     }
