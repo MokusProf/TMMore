@@ -14,7 +14,6 @@ import org.jetbrains.annotations.Nullable;
 public class WallPanelBlock extends Block {
     public static final EnumProperty<PartType> PART = EnumProperty.of("part", PartType.class);
 
-
     public WallPanelBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState()
