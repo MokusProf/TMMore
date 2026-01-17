@@ -23,8 +23,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 import java.util.function.Function;
 
-import static net.minecraft.data.client.BlockStateModelGenerator.createBooleanModelMap;
-import static net.minecraft.data.client.BlockStateModelGenerator.createEastDefaultHorizontalRotationStates;
+import static net.minecraft.data.client.BlockStateModelGenerator.*;
 
 
 public class ModModelProvider extends FabricModelProvider {
@@ -289,30 +288,6 @@ public class ModModelProvider extends FabricModelProvider {
         );
     }
 
-    public final void registerChristmasLights(BlockStateModelGenerator generator, Block block) {
-        generator.registerItemModel(block);
-        Identifier identifier = ModelIds.getBlockModelId(block);
-        MultipartBlockStateSupplier multipartBlockStateSupplier = MultipartBlockStateSupplier.create(block);
-        When.PropertyCondition propertyCondition = Util.make(
-                When.create(), propertyConditionx -> BlockStateModelGenerator.CONNECTION_VARIANT_FUNCTIONS.stream().map(Pair::getFirst).forEach(property -> {
-                    if (block.getDefaultState().contains(property)) {
-                        propertyConditionx.set(property, false);
-                    }
-                })
-        );
-
-        for (Pair<BooleanProperty, Function<Identifier, BlockStateVariant>> pair : BlockStateModelGenerator.CONNECTION_VARIANT_FUNCTIONS) {
-            BooleanProperty booleanProperty = pair.getFirst();
-            Function<Identifier, BlockStateVariant> function = pair.getSecond();
-            if (block.getDefaultState().contains(booleanProperty)) {
-                multipartBlockStateSupplier.with(When.create().set(booleanProperty, true), function.apply(identifier));
-                multipartBlockStateSupplier.with(propertyCondition, function.apply(identifier));
-            }
-        }
-
-        generator.blockStateCollector.accept(multipartBlockStateSupplier);
-    }
-
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
 
@@ -527,8 +502,6 @@ public class ModModelProvider extends FabricModelProvider {
         this.registerOrnament(generator,ModBlocks.OXIDIZED_COPPER_ORNAMENT);
         this.registerOrnament(generator,ModBlocks.WEATHERED_COPPER_ORNAMENT);
 
-        this.registerChristmasLights(generator,ModBlocks.CHRISTMAS_LIGHTS);
-
 
     }
 
@@ -562,6 +535,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemGen.register(ModItems.WATER_GLASS, Models.GENERATED);
         itemGen.register(ModItems.MOONSHINE, Models.GENERATED);
         itemGen.register(ModItems.BEER_PINT, Models.GENERATED);
+        itemGen.register(ModItems.HOT_CHOCOLATE,Models.GENERATED);
 
 
     }

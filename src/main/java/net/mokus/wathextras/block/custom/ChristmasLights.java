@@ -1,16 +1,21 @@
 package net.mokus.wathextras.block.custom;
 
 import com.google.common.collect.ImmutableMap;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.block.VineBlock;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.WorldView;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 import java.util.function.Function;
@@ -24,6 +29,7 @@ public class ChristmasLights extends VineBlock {
     private static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(0.0, 10.0, 0.0, 16.0, 15.0, 2.0);
     private static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(0.0, 10.0, 14.0, 16.0, 15.0, 16.0);
     private final Map<BlockState, VoxelShape> shapesByState;
+
 
     public ChristmasLights(Settings settings) {
         super(settings);
@@ -44,19 +50,15 @@ public class ChristmasLights extends VineBlock {
         if (state.get(UP)) {
             voxelShape = UP_SHAPE;
         }
-
         if (state.get(NORTH)) {
             voxelShape = VoxelShapes.union(voxelShape, SOUTH_SHAPE);
         }
-
         if (state.get(SOUTH)) {
             voxelShape = VoxelShapes.union(voxelShape, NORTH_SHAPE);
         }
-
         if (state.get(EAST)) {
             voxelShape = VoxelShapes.union(voxelShape, WEST_SHAPE);
         }
-
         if (state.get(WEST)) {
             voxelShape = VoxelShapes.union(voxelShape, EAST_SHAPE);
         }
@@ -67,5 +69,10 @@ public class ChristmasLights extends VineBlock {
     @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return this.shapesByState.get(state);
+    }
+
+    @Override
+    protected boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        return sideCoversSmallSquare(world, pos.down(), Direction.UP);
     }
 }

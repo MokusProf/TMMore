@@ -242,14 +242,10 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.STACK_LIGHTS, "Modern Stack Lights");
         translationBuilder.add(ModBlocks.ROOF_LAMP, "Roof Lamp");
 
-        translationBuilder.add(ModBlocks.KILL_BLOCK,"Kill Block");
-        translationBuilder.add(ModBlocks.KILL_BLOCK_PANEL,"Kill Panel");
-
         translationBuilder.add(ModBlocks.EBONY_WALL_PANEL, "Ebony Panel Wall");
         translationBuilder.add(ModBlocks.BLEACHED_WALL_PANEL, "Bleached Panel Wall");
         translationBuilder.add(ModBlocks.MAHOGANY_WALL_PANEL, "Mahogany Panel Wall");
         translationBuilder.add(ModBlocks.DARK_OAK_WALL_PANEL, "Dark Oak Panel Wall");
-        translationBuilder.add(ModBlocks.BUBINGA_WALL_PANEL,"Bubinga Panel Wall");
 
         translationBuilder.add(ModItems.GINGERBREAD,"Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_CHOCO,"Chocolate Gingerbread");

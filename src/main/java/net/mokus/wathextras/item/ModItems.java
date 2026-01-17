@@ -88,6 +88,8 @@ public class ModItems {
             new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
     public static final Item BEER_PINT = registerItem("beer_pint",
             new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
+    public static final Item HOT_CHOCOLATE = registerItem("hot_chocolate",
+            new CocktailItem(new Item.Settings().maxCount(1).food(FoodComponents.HONEY_BOTTLE)));
 
 
 
@@ -118,6 +120,7 @@ public class ModItems {
             TMMORE_ITEMS.add(MILK_GLASS);
             TMMORE_ITEMS.add(STRAWBERRY_MILK_GLASS);
             TMMORE_ITEMS.add(CHOCCY_MILK_GLASS);
+            TMMORE_ITEMS.add(HOT_CHOCOLATE);
             // Food
             TMMORE_ITEMS.add(CAKESLICE);
             TMMORE_ITEMS.add(GREEN_LOLLIPOP);

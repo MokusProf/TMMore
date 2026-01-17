@@ -58,8 +58,8 @@ dependencies {
 
 	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 
-	modImplementation "maven.modrinth:sodium:${sodium_version}-fabric"
-	modImplementation "maven.modrinth:iris:${iris_version}-fabric"
+	modImplementation ("maven.modrinth:sodium:${sodium_version}-fabric")
+	modImplementation( "maven.modrinth:iris:${iris_version}-fabric")
 	
 }
 

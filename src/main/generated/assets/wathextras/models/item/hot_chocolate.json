@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "wathextras:block/christmas_lights"
+    "layer0": "wathextras:item/hot_chocolate"
   }
 }
