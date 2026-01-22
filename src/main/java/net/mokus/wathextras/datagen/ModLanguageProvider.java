@@ -228,6 +228,17 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.YELLOW_LOLLIPOP, "Yellow Lollipop");
         translationBuilder.add(ModItems.GREEN_LOLLIPOP, "Green Lollipop");
 
+        translationBuilder.add(ModItems.BLENDED_BERRY_BLAST,"Blended Berry Blast");
+        translationBuilder.add(ModItems.COTTON_SWIZZLE,"Cotton Swizzle");
+        translationBuilder.add(ModItems.NO_BERRY_LEMON_SOUR,"No Berry Lemon Sour");
+        translationBuilder.add(ModItems.SALTED_SEAFRUIT,"Salted Seafruit");
+        translationBuilder.add(ModItems.SAPPHIC_SUNSET,"Sapphic Sunset");
+        translationBuilder.add(ModItems.THE_ALL_IN,"The All In");
+        translationBuilder.add(ModItems.THE_CHROMATIC,"The Chromatic");
+        translationBuilder.add(ModItems.CAKESLICE,"Slice of Cake");
+
+        translationBuilder.add(ModItems.HOT_CHOCOLATE,"Hot Chocolate");
+
         translationBuilder.add(ModBlocks.PINK_CITRINE_BRICKS,"Pink Citrine Bricks");
         translationBuilder.add(ModBlocks.POLISHED_PINK_CITRINE,"Polished Pink Citrine");
         translationBuilder.add(ModBlocks.SMOOTH_PINK_CITRINE,"Smooth Pink Citrine");
