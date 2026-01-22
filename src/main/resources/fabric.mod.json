@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "wathextras",
 	"version": "${version}",
-	"name": "Wathextras",
-	"description": "Adds more building blocks in the Wathe style",
+	"name": "WathExtras",
+	"description": "Adds more building blocks in the WATHE style",
 	"contributors": [
 		"_Mokus",
 		"Miss_Nora",

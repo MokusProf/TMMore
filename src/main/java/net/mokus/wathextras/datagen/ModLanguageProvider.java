@@ -258,6 +258,9 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.MAHOGANY_WALL_PANEL, "Mahogany Panel Wall");
         translationBuilder.add(ModBlocks.DARK_OAK_WALL_PANEL, "Dark Oak Panel Wall");
 
+        translationBuilder.add(ModBlocks.KILL_BLOCK, "Kill Block");
+        translationBuilder.add(ModBlocks.KILL_BLOCK_PANEL, "Kill Block Panel");
+
         translationBuilder.add(ModItems.GINGERBREAD,"Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_CHOCO,"Chocolate Gingerbread");
         translationBuilder.add(ModItems.GINGERBREAD_DUCKAMOLY,"Duckamoly-bread");
@@ -268,6 +271,27 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHRISTMAS_LIGHTS,"Christmas Lights");
         translationBuilder.add(ModBlocks.WREATH,"Wreath");
         translationBuilder.add(ModBlocks.SNOWY_WREATH,"Snowy Wreath");
+
+        translationBuilder.add(ModItems.CAKESLICE,"Slice of Cake");
+
+        translationBuilder.add(ModItems.WATER_GLASS,"Glass of Water");
+        translationBuilder.add(ModItems.MIXED_MOCKTAIL,"Mixed Mocktail");
+        translationBuilder.add(ModItems.TEQUILA_SHOT,"Shot of Tequila");
+        translationBuilder.add(ModItems.WHISKEY_SOUR,"Whiskey Sour");
+        translationBuilder.add(ModItems.MOONSHINE,"Moonshine");
+        translationBuilder.add(ModItems.BEER_PINT,"Pint of Beer");
+        translationBuilder.add(ModItems.HOT_CHOCOLATE,"Hot Chocolate");
+
+        translationBuilder.add(ModItems.BLENDED_BERRY_BLAST,"\"Blended Berry Blast\"");
+        translationBuilder.add(ModItems.COTTON_SWIZZLE,"\"Cotton Swizzle\"");
+        translationBuilder.add(ModItems.NO_BERRY_LEMON_SOUR,"\"No Berry Lemon Sour\"");
+        translationBuilder.add(ModItems.SALTED_SEAFRUIT,"\"Salted Seafruit\"");
+        translationBuilder.add(ModItems.SAPPHIC_SUNSET,"\"Sapphic Sunset\"");
+        translationBuilder.add(ModItems.THE_ALL_IN,"\"The All In\"");
+        translationBuilder.add(ModItems.THE_CHROMATIC,"\"The Chromatic\"");
+
+        translationBuilder.add("tooltip.wathextras.killblocks.block","Kills players that stand on top of the block");
+        translationBuilder.add("tooltip.wathextras.killblocks.panel","Kills players that touch the block the panel is in");
 
         translationBuilder.add("sounds.tmmore.squid_plush","Squid plays a tune");
         translationBuilder.add("sounds.tmmore.willo_plush","Willo \"POWs!\"");
